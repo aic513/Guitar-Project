@@ -36,9 +36,9 @@ body {
 
 .layout-center-wrapper {
 
-    width: 1286px;
-    margin: 0px auto;
     position: relative;
+    margin: 0px auto;
+    width: 1286px;
 
 }
 
@@ -136,7 +136,7 @@ body {
 .main-picture {
 
   background-size: cover;
-  background:url("../img/map.jpg") no-repeat 50% 50%;
+  background:url("../img/start-pic.png") no-repeat 50% 50%;
   min-width: 1285px;
   height: 844px; 
 
@@ -211,5 +211,103 @@ body {
     font-weight: 700;
     margin-top: 25px;
 
+}
+
+.features {
+
+    color:#fff;
+    outline:2px dotted green;
+    width: 1286px;
+    padding: 0;
+    margin-top: 148px;
+    margin-bottom: 191px;
+    list-style: none;
+
+}
+
+
+.features li {
+
+    width:335px;
+    text-align:center;
+    margin-right: 140px;
+    display: block;
+
+}
+
+
+.features li:first-child {
+
+    margin-left:0;
+
+}
+
+
+.features li:last-child {
+
+    margin-right:0;
+
+}
+
+
+
+.feature-inside {
+
+    display: block;
+    font-size: 15px;
+    color: #878787;
+    letter-spacing: 1px;
+    margin-bottom: 42px;
+
+}
+
+.feature-image {
+
+    background: url("../img/sprite.png") no-repeat 21% 46%;
+    height: 60px;
+    margin: 0 auto;
+    width: 113px;
+
+}
+
+.hat {
+
+    background: url("../img/sprite.png") no-repeat 39% 46%;
+
+}
+
+.guitar {
+
+    background: url("../img/sprite.png") no-repeat 59% 45%;
+    
+}
+
+.btn {
+
+    width: 98px;
+    background: #0e0e8a;
+    color: #fff;
+    line-height: 18px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 118px;
+    text-decoration: none;
+    height: 21px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    display: block;
+
+}
+
+.btn:hover {
+
+    background: #1515bf;
+
+}
+
+.btn:active {
+
+    background: #1515bf;
 }
 
