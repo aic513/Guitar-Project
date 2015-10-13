@@ -506,10 +506,35 @@ input[id^="btn-"]{
     font-size: 15px;
     color: #787878;
     text-align: center;
-    padding-left: 457px;
-    padding-right: 520px;
+    padding-left: 486px;
+    padding-right: 479px;
     margin-bottom: 1px;
 
+
+}
+
+.guitar {
+
+    position: absolute;
+
+}
+
+.descripton-guitar {
+
+    border: 3px solid #fff;
+    position: absolute;
+    top:25%;
+    height: 226px;
+    width: 816px;
+    left:22%;
+
+}
+
+.descripton-guitar h5{
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 35px;
+    text-align: center;
 
 }
 
