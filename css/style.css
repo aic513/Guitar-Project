@@ -317,6 +317,7 @@ body {
     position: relative;
     background:#f2f2f2;
     min-width: 1286px;
+    min-height: 800px;
 
 }
 
@@ -326,8 +327,8 @@ body {
     color:#fff;
     width: 1286px;
     padding: 0;
-    margin-top: 148px;
-    margin-bottom: 191px;
+    margin-top: 85px;
+    margin-bottom: 74px;
     list-style: none;
     display: block;
     float: left;
@@ -410,7 +411,7 @@ body {
     height: 26px;
     width: 80px;
     z-index:5;
-    top:797px;
+    top:738px;
     background:#f2f2f2;
     text-align:center;
     margin-left:-30px;
@@ -484,6 +485,31 @@ input[id^="btn-"]{
     width: 25px;
     height: 25px;
     top: 67px;
+
+}
+
+.opinions h3 {
+
+    text-transform: uppercase;
+    color: #787878;
+    font-size: 1.6875em;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 500;
+    font-family: "SegoeUIRegular";
+    margin-bottom: 13px;
+
+}
+
+.opinions p {
+
+    font-size: 15px;
+    color: #787878;
+    text-align: center;
+    padding-left: 457px;
+    padding-right: 520px;
+    margin-bottom: 1px;
+
 
 }
 
