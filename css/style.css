@@ -513,9 +513,13 @@ input[id^="btn-"]{
 
 }
 
-.guitar {
+.guitar-big {
 
     position: absolute;
+    background-size: cover;
+    background:url("../img/guitar-picture.jpg") no-repeat 50% 50%;
+    min-width: 1285px;
+    height: 422px;
 
 }
 
