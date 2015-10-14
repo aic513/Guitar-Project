@@ -146,9 +146,9 @@ body {
     width: 784px;
     min-height: 121px;
     float: left;
-    position: absolute;
     bottom: 462px;
     left: 173px;
+    position: absolute;
  }
 
 
@@ -515,11 +515,11 @@ input[id^="btn-"]{
 
 .guitar-big {
 
-    position: absolute;
     background-size: cover;
     background:url("../img/guitar-picture.jpg") no-repeat 50% 50%;
     min-width: 1285px;
     height: 422px;
+    /*position: relative;*/
 
 }
 
@@ -527,10 +527,10 @@ input[id^="btn-"]{
 
     border: 3px solid #fff;
     position: absolute;
-    top:25%;
     height: 226px;
     width: 816px;
-    left:22%;
+    float: left;
+    top: -320px;;
 
 }
 
@@ -539,6 +539,14 @@ input[id^="btn-"]{
     font-size: 2.4em;
     margin-top: 35px;
     text-align: center;
+
+}
+
+.layout-center-wrapper-small {
+
+    width: 820px;
+    margin: 0 auto;
+    position: relative;
 
 }
 
