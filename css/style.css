@@ -219,8 +219,6 @@ body {
     margin-top: 148px;
     margin-bottom: 191px;
     list-style: none;
-    display: block;
-    float: left;
 
 }
 
@@ -331,8 +329,7 @@ body {
     margin-bottom: 74px;
     list-style: none;
     display: block;
-    float: left;
-
+    
 }
  
 .slide li {
@@ -529,7 +526,6 @@ input[id^="btn-"]{
     position: absolute;
     height: 226px;
     width: 816px;
-    float: left;
     top: -320px;;
 
 }
