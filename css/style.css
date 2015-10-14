@@ -549,10 +549,9 @@ input[id^="btn-"]{
 
 .author {
 
-    outline: 2px dotted green;
     min-height: 850px;
     margin-top: 115px;
-    /*margin-bottom: 146px;*/
+    margin-bottom: -42px;
 
 
 }
@@ -584,7 +583,6 @@ input[id^="btn-"]{
 .author-features {
 
     min-height: 163px;
-    outline: 2px dotted blue;
 }
 
 .number {
@@ -645,7 +643,6 @@ input[id^="btn-"]{
 
 .author-phone {
 
-    outline: 2px dotted green;
     min-height: 185px;
     text-align: center;
     color: #7c7c7c;
@@ -664,6 +661,7 @@ input[id^="btn-"]{
     position: relative;
     letter-spacing: 1px;
     padding-left: 92px;
+    margin-bottom: 5px;
 
 }
 
@@ -677,4 +675,105 @@ input[id^="btn-"]{
     left:4px;
     top:20px;
     margin-right:0px;
+}
+
+
+
+footer {
+    background-color: #484848;
+    min-width: 1284px;
+
+}
+
+.footer-column:last-child {
+
+    margin-right: 0;
+    font-style: italic;
+}
+
+.footer-column {
+
+    width:335px;
+    margin-right: 140px;
+    min-height: 300px;
+    color: #fff;
+    padding-top: 100px;
+
+
+}
+
+.footer-column h3 {
+
+    font-size: 1.56em;
+    text-transform: uppercase;
+}
+
+.footer-middle {
+
+    list-style: none;
+    margin:0;
+    padding: 0;
+    min-height: 82px;
+
+}
+
+.phones-kinds li {
+
+    font-size: 14px;
+    margin-bottom: 11px;
+
+}
+
+.phones-numbers {
+
+    font-size: 20px;
+}
+
+.social-buttons {
+
+    width: 200px;
+    height: 30px;
+    margin-top: 110px;
+}
+
+.btn-social{
+    display:inline-block;
+    color:transparent;
+    background:url("../img/social-sprite.png") no-repeat -91px -4px;
+    width:23px;
+    height:23px;
+    margin-right:8px;
+
+}
+
+.btn-social:last-child {
+    margin-right: 0;
+}
+
+.btn-social-fb {
+
+    background-position: -116px -3px;
+}
+
+.btn-social-inst {
+
+    background-position: -62px -4px;
+
+}
+
+.btn-social-vk {
+
+    background-position: -140px -4px;
+
+}
+
+.btn-social-lk {
+
+    background-position: -3px -4px;
+}
+
+.btn-social-youtube {
+
+    background-position: -33px -2px;
+
 }
