@@ -25,6 +25,7 @@
 
 /*--STYLE--*/
 
+/*Верстка первой страницы*/
 body {
     background-color: #fff;
     font-size: 16px;
@@ -109,7 +110,7 @@ body {
 }
 
 .main-picture {
-    background: url("../img/start-pic.jpg");
+    background: url("../img/start-pic.jpg")no-repeat 50% 50%;
     height: 844px;
     background-size: cover;
     min-width: 1285px;
@@ -628,4 +629,36 @@ footer {
 
 .btn-social-youtube {
     background-position: -33px -2px;
+}
+
+
+/*Верстка страницы с ценами*/
+
+.main-page-grey {
+    position: relative;
+}
+
+.main-page-grey::before {
+    position: absolute;
+    content: "";
+    width: 41px;
+    border-bottom: 7px solid #787878;
+    left: -21px;
+    top: 59px;
+    margin-left: 20px;
+}
+
+.main-picture-price {
+    background: url("../img/price-main-pic.jpg")no-repeat 50% 50%;
+    height: 844px;
+    background-size: cover;
+    min-width: 1285px;
+}
+
+.big-supply {
+    width: 795px;
+    min-height: 121px;
+    float: left;
+    bottom: 462px;
+    margin-top: 210px;
 }
