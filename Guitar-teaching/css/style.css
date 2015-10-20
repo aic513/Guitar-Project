@@ -777,6 +777,11 @@ footer {
     display: none;
 }
 
+.list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .column h3 {
     font-size: 1.25em;
     text-transform: uppercase;
@@ -929,7 +934,7 @@ footer {
     background: #393939;
     margin-bottom: 173px;
     left: 46%;
-    top: 100%;
+    top: 118%;
 }
 
 .main-responses {
@@ -971,10 +976,160 @@ footer {
     background: url("../img/responses/mary1.jpg") no-repeat 50% 50%;
 }
 
-.robert {
+.robert1 {
     background: url("../img/responses/robert1.jpg") no-repeat 50% 50%;
 }
 
-.slava {
+.slava1 {
     background: url("../img/responses/slava1.jpg") no-repeat 50% 50%;
+}
+
+
+/*Верстка страницы с контактами*/
+
+.main-page-grey-contacts {
+    position: relative;
+}
+
+.main-page-grey-contacts::before {
+    position: absolute;
+    content: "";
+    width: 76px;
+    border-bottom: 7px solid #787878;
+    left: -21px;
+    top: 59px;
+    margin-left: 20px;
+}
+
+.description-contacts {
+    position: relative;
+    width: 380px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 190px;
+    text-align: center;
+    margin-top: -43px;
+}
+
+.description-contacts h2 {
+    font-size: 1.6875em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.description-contacts p {
+    font-size: 15px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.description-contacts::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 72px;
+    height: 13px;
+    background: #393939;
+    margin-bottom: 173px;
+    left: 42%;
+    top: 100%;
+}
+
+.map {
+    height: 533px;
+    min-width: 1285px;
+    background: url("img/map.jpg") no-repeat 50% 50%;
+    margin-top: 50px;
+    background-size: cover;
+}
+
+.guitar-big-contacts {
+    background-size: cover;
+    background: url("../img/contacts-guitar-pic.jpg") no-repeat 50% 50%;
+    min-width: 1285px;
+    height: 433px;
+}
+
+.descripton-guitar-contacts {
+    border: 3px solid #fff;
+    height: 226px;
+    width: 816px;
+    margin-top: 90px;
+}
+
+.descripton-guitar-contacts h5 {
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.contacts-text {
+    width: 1285px;
+    height: 170px;
+    margin-top: 91px;
+    margin-bottom: 148px;
+}
+
+.contacts-column-bottom {
+    float: left;
+    width: 260px;
+    min-height: 120px;
+    margin-left: 33px;
+    margin-right: 39px;
+}
+
+.contacts-column-bottom:last-child {
+    margin-right: 0;
+    margin-left: 9px;
+}
+
+.contacts-column-bottom p {
+    font-style: 15px;
+    color: #7c7c7c;
+    text-align: center;
+}
+
+.contact-phone {
+    font-size: 1.8em;
+    margin-top: 18px;
+}
+
+.contact-phone:first-child {
+    margin-bottom: 14px;
+}
+
+.contact-phone:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.contact-phone-description {
+    text-align: left;
+}
+
+.contact-email {
+    font-size: 1.8em;
+}
+
+.contact-email:first-child {
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+.contact-email {
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+.contact-email-description {
+    margin-top: -5px;
+    margin-bottom: -27px;
+}
+
+.music {
+    margin-top: 23px;
+    margin-bottom: -13px;
 }
