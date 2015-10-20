@@ -25,7 +25,9 @@
 
 /*--STYLE--*/
 
+
 /*Верстка первой страницы*/
+
 body {
     background-color: #fff;
     font-size: 16px;
@@ -53,7 +55,6 @@ body {
     min-height: 99px;
     min-width: 731px;
     display: block;
-    float: left;
     text-transform: uppercase;
     padding: 0;
     margin: 0;
@@ -497,9 +498,9 @@ input[id^="btn-"] {
 }
 
 .number-text {
+    padding-left: -3px;
     font-size: 14px;
     color: #1e1e1e;
-    padding-left: -3px;
     margin: 0 auto;
 }
 
@@ -653,6 +654,7 @@ footer {
     height: 844px;
     background-size: cover;
     min-width: 1285px;
+    margin-bottom: -43px;
 }
 
 .big-supply {
@@ -667,7 +669,7 @@ footer {
     background-size: cover;
     background: url("../img/guitar-picture-price.jpg") no-repeat 50% 50%;
     min-width: 1285px;
-    height: 422px;
+    height: 433px;
 }
 
 .descripton-guitar-price {
@@ -681,5 +683,181 @@ footer {
     color: #fff;
     font-size: 2.4em;
     margin-top: 35px;
+    text-align: center;
+}
+
+.description-choice-price {
+    position: relative;
+    width: 380px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 190px;
+    text-align: center;
+    margin-top: -43px;
+}
+
+.description-choice-price h2 {
+    font-size: 1.6875em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.description-choice-price p {
+    font-size: 15px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.description-choice-price::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 72px;
+    height: 13px;
+    background: #393939;
+    margin-bottom: 173px;
+    left: 46%;
+    top: 100%;
+}
+
+.main-price-block {
+    width: 1285px;
+    height: 583px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+}
+
+.column {
+    position: relative;
+    width: 260px;
+    height: 538px;
+    float: left;
+    margin-left: 32px;
+    margin-right: 39px;
+    background-color: #323333;
+    color: #cfcfcf;
+}
+
+.column:last-child {
+    margin-right: 21px;
+    margin-left: 6px;
+}
+
+.list {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.list li {
+    position: relative;
+    width: 175px;
+    height: 80px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 300;
+    display: block;
+}
+
+.list li::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 184px;
+    height: 1px;
+    background: #fff;
+    left: 1%;
+    top: 68%;
+}
+
+.list li:last-child::after{
+    display: none;
+}
+
+.column h3 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.price{
+    text-align: center;
+    font-size: 1.375em;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-style: italic;
+
+}
+
+.column::before{
+    content:"";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 160px;
+    border-left:100px solid transparent;
+    border-right:100px solid transparent;
+    border-top:100px solid transparent;
+    border-bottom:50px solid #323333;
+    top:-57%;
+    left:11%;
+}
+
+.column::after{
+    content:"";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 160px;
+    border-left:100px solid transparent;
+    border-right:100px solid transparent;
+    border-top:50px solid #323333;
+    border-bottom:50px solid transparent;
+    top:100%;
+    left:11%;
+}
+
+.description-price-bottom{
+    width: 836px;
+    height: 30px;
+    color:#7c7c7c;
+    font-size: 15px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+
+
+.column-text{
+    width:1285px;
+    height: 170px;
+    margin-top:91px;
+    margin-bottom:148px;
+
+}
+
+.text-column-bottom{
+    float:left;
+    width: 260px;
+    min-height: 120px;
+    margin-left: 33px;
+    margin-right: 39px;
+}
+
+.text-column-bottom:last-child{
+    margin-right: 0;
+    margin-left: 9px;
+}
+
+.text-column-bottom p{
+    font-style:15px;
+    color:#7c7c7c;
     text-align: center;
 }
