@@ -747,8 +747,8 @@ footer {
 }
 
 .list {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -762,7 +762,7 @@ footer {
     display: block;
 }
 
-.list li::after{
+.list li::after {
     position: absolute;
     display: block;
     content: "";
@@ -773,7 +773,7 @@ footer {
     top: 68%;
 }
 
-.list li:last-child::after{
+.list li:last-child::after {
     display: none;
 }
 
@@ -786,78 +786,195 @@ footer {
     font-weight: 400;
 }
 
-.price{
+.price {
     text-align: center;
     font-size: 1.375em;
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     font-style: italic;
-
 }
 
-.column::before{
-    content:"";
+.column::before {
+    content: "";
     position: absolute;
     display: block;
     width: 0;
     height: 160px;
-    border-left:100px solid transparent;
-    border-right:100px solid transparent;
-    border-top:100px solid transparent;
-    border-bottom:50px solid #323333;
-    top:-57%;
-    left:11%;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 50px solid #323333;
+    top: -57%;
+    left: 11%;
 }
 
-.column::after{
-    content:"";
+.column::after {
+    content: "";
     position: absolute;
     display: block;
     width: 0;
     height: 160px;
-    border-left:100px solid transparent;
-    border-right:100px solid transparent;
-    border-top:50px solid #323333;
-    border-bottom:50px solid transparent;
-    top:100%;
-    left:11%;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 50px solid #323333;
+    border-bottom: 50px solid transparent;
+    top: 100%;
+    left: 11%;
 }
 
-.description-price-bottom{
+.description-price-bottom {
     width: 836px;
     height: 30px;
-    color:#7c7c7c;
+    color: #7c7c7c;
     font-size: 15px;
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     text-align: center;
     margin: 0 auto;
-
 }
 
-
-
-.column-text{
-    width:1285px;
+.column-text {
+    width: 1285px;
     height: 170px;
-    margin-top:91px;
-    margin-bottom:148px;
-
+    margin-top: 91px;
+    margin-bottom: 148px;
 }
 
-.text-column-bottom{
-    float:left;
+.text-column-bottom {
+    float: left;
     width: 260px;
     min-height: 120px;
     margin-left: 33px;
     margin-right: 39px;
 }
 
-.text-column-bottom:last-child{
+.text-column-bottom:last-child {
     margin-right: 0;
     margin-left: 9px;
 }
 
-.text-column-bottom p{
-    font-style:15px;
-    color:#7c7c7c;
+.text-column-bottom p {
+    font-style: 15px;
+    color: #7c7c7c;
     text-align: center;
+}
+
+
+/*Верстка страницы с отзывами*/
+
+.main-page-grey-opinions {
+    position: relative;
+}
+
+.main-page-grey-opinions::before {
+    position: absolute;
+    content: "";
+    width: 59px;
+    border-bottom: 7px solid #787878;
+    left: -21px;
+    top: 59px;
+    margin-left: 20px;
+}
+
+.guitar-big-responses {
+    background-size: cover;
+    background: url("../img/responses-pic.jpg") no-repeat 50% 50%;
+    min-width: 1285px;
+    height: 423px;
+}
+
+.descripton-guitar-responses {
+    border: 3px solid #fff;
+    height: 226px;
+    width: 816px;
+    margin-top: 90px;
+}
+
+.descripton-guitar-responses h5 {
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.description-responses {
+    position: relative;
+    width: 380px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 190px;
+    text-align: center;
+    margin-top: -43px;
+}
+
+.description-responses h2 {
+    font-size: 1.6875em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.description-responses p {
+    font-size: 15px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.description-responses::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 72px;
+    height: 13px;
+    background: #393939;
+    margin-bottom: 173px;
+    left: 46%;
+    top: 100%;
+}
+
+.main-responses {
+    color: #fff;
+    width: 1286px;
+    padding: 0;
+    margin-top: 148px;
+    margin-bottom: 191px;
+    list-style: none;
+}
+
+.main-responses li {
+    width: 335px;
+    text-align: center;
+    margin-right: 140px;
+    display: block;
+}
+
+.main-responses li:first-child {
+    margin-left: 0;
+}
+
+.main-responses li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.main-responses-inside {
+    display: block;
+    font-size: 15px;
+    color: #878787;
+    letter-spacing: 1px;
+    margin-bottom: 52px;
+}
+
+.main-responses-image {
+    height: 260px;
+    width: 326px;
+    margin: 0 auto;
+    background: url("../img/responses/mary1.jpg") no-repeat 50% 50%;
+}
+
+.robert {
+    background: url("../img/responses/robert1.jpg") no-repeat 50% 50%;
+}
+
+.slava {
+    background: url("../img/responses/slava1.jpg") no-repeat 50% 50%;
 }
