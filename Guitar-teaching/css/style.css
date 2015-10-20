@@ -662,3 +662,24 @@ footer {
     bottom: 462px;
     margin-top: 210px;
 }
+
+.guitar-big-price {
+    background-size: cover;
+    background: url("../img/guitar-picture-price.jpg") no-repeat 50% 50%;
+    min-width: 1285px;
+    height: 422px;
+}
+
+.descripton-guitar-price {
+    border: 3px solid #fff;
+    height: 226px;
+    width: 816px;
+    margin-top: 90px;
+}
+
+.descripton-guitar-price h5 {
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 35px;
+    text-align: center;
+}
