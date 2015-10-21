@@ -1006,7 +1006,7 @@ footer {
     width: 380px;
     height: 90px;
     margin: 0 auto;
-    margin-bottom: 190px;
+    margin-bottom: 133px;
     text-align: center;
     margin-top: -43px;
 }
@@ -1076,7 +1076,7 @@ footer {
 
 .contacts-column-bottom {
     float: left;
-    width: 260px;
+    width: 262px;
     min-height: 120px;
     margin-left: 33px;
     margin-right: 39px;
@@ -1090,7 +1090,7 @@ footer {
 .contacts-column-bottom p {
     font-style: 15px;
     color: #7c7c7c;
-    text-align: center;
+    text-align: justify;
 }
 
 .contact-phone {
@@ -1132,4 +1132,162 @@ footer {
 .music {
     margin-top: 23px;
     margin-bottom: -13px;
+}
+
+form {
+    margin-top: 83px;
+    padding-bottom: 0px;
+    margin-bottom: 117px;
+    margin: 0;
+}
+
+.contact-form input[type="email"] {
+    display: block;
+    width: 186px;
+    padding: 9px 169px 13px 13px;
+    border: 2px solid #c0c0c0;
+    margin-bottom: -10px;
+    font-size: 17.34px;
+    background-color: #f3f3f3;
+}
+
+input::-webkit-input-placeholder {
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    color: #d8d8d8;
+}
+
+input:-moz-placeholder {
+    color: #d8d8d8;
+}
+
+.contact-form input[type="email"]:hover {
+    color: #d8d8d8;
+    cursor: pointer;
+}
+
+.contact-form input[type="text"]:hover {
+    color: #d8d8d8;
+    cursor: pointer;
+}
+
+.contact-form input[type="tel"]:hover {
+    color: #d8d8d8;
+    cursor: pointer;
+}
+
+.half-width {
+    margin-bottom: 15px;
+}
+
+.submit-btn {
+    display: inline-block;
+    width: 196px;
+    height: 47px;
+    border: 2px solid #bec5c0;
+    background-color: #e6f2e8;
+    color: #bfc7c0;
+    font-size: 17.34px;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #c4f0ca;
+    color: #93a195;
+    cursor: pointer;
+}
+
+.submit-btn:active {
+    background-color: #c4f0ca;
+    color: #93a195;
+    cursor: pointer;
+}
+
+.form-all {
+    width: 1217px;
+    min-height: 173px;
+    border-bottom: 1px solid #d7d7d7;
+    margin: 0 auto;
+}
+
+.form-all:nth-child(2) {
+    border: none;
+    margin-top: 30px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"] {
+    display: block;
+    width: 109px;
+    padding: 9px 169px 13px 13px;
+    border: 2px solid #c0c0c0;
+    margin-bottom: -10px;
+    font-size: 17.34px;
+    color: #bdbdbd;
+    background-color: #f3f3f3;
+}
+
+input::-webkit-input-placeholder {
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    color: #bdbdbd;
+}
+
+input:-moz-placeholder {
+    color: #d8d8d8;
+}
+
+.form-position {
+    display: block;
+    margin-top: 32px;
+}
+
+.form-position:first-child {
+    margin-left: -6px;
+    width: 262px;
+    margin-right: 30px;
+}
+
+.form-position:nth-child(2) {
+    margin-right: 31px;
+    margin-left: 28px;
+}
+
+.form-position:last-child {
+    margin-right: 0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    margin-bottom: -5px;
+    width: 109px;
+}
+
+.contact-form textarea {
+    width: 567px;
+    height: 82px;
+    background-color: #f3f3f3;
+    border: 2px solid #c0c0c0;
+    font-size: 17.34px;
+    color: #bdbdbd;
+}
+
+.contact-form select {
+    background-color: #f3f3f3;
+    border: 2px solid #c0c0c0;
+    height: 47px;
+    width: 295px;
+}
+
+.contact-form input[type="date"] {
+    background-color: #f3f3f3;
+    border: 2px solid #c0c0c0;
+    height: 43px;
+    width: 289px;
+}
+
+.form-bottom {
+    display: inline-block;
+    font-size: 17.34px;
+    color: #bdbdbd;
+    margin-right: 27px;
+    margin-left: -4px;
 }

@@ -55,6 +55,7 @@
             <h2>Контакты</h2>
             <p>Контактная информация для связи со мной</p>
         </div>
+        <!-- Верстаем контактуную информацию -->
         <div class="contacts-text clearfix">
             <div class="contacts-column-bottom">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima beatae, iure harum ex? Nam omnis beatae, maiores distinctio corporis molestiae laudantium ipsum eaque, expedita maxime similique, pariatur quo nemo.</p>
@@ -74,6 +75,44 @@
                 <p class="contact-email-description1">E-mail адрес для связи</p>
             </div>
         </div>
+        <!-- Закрыли контактную информацию -->
+        <!-- Верастем форму отправки связи -->
+        <form class="contact-form" action="#" method="post">
+            <div class="form-all">
+                <div class="choice-form-top to-left ">
+                    <div class="form-position to-left">
+                        <input type="text" name="login" id="login-field" placeholder="Ваше имя" required>
+                        <br>
+                        <input type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}" placeholder="Ваш номер телефона" required>
+                    </div>
+                    <div class="form-position to-left">
+                        <input type="email" name="email" id="email-field" placeholder="Ваш e-mail" required>
+                        <br>
+                        <input type="text" name="expirience" id="expirience-field" placeholder="Ваш опыт игры на гитаре" required>
+                    </div>
+                    <div class="form-position to-left">
+                        <textarea name="text">Текст сообщения</textarea>
+                    </div>
+                </div>
+                <div class="description-form-top to-left "></div>
+                <div class="letter-form-top to-left"></div>
+            </div>
+            <div class="form-all">
+                <div class="choice form-bottom ">
+                    <select name="cource">
+                        <option value="choice">Выберите курс обучения</option>
+                        <option value="start">Для начинающих</option>
+                        <option value="optimal">Оптимальный</option>
+                        <option value="max">Максимальный</option>
+                    </select>
+                </div>
+                <div class="tense form-bottom ">
+                    <input type="date" name="date" id="date-field" placeholder="Выберите дату начала обучение" required>
+                </div>
+                <input class="submit-btn" type="submit" value="Отправить форму">
+            </div>
+        </form>
+        <!-- Закрыли форму отправки связи -->
     </div>
     <!-- Вставляем интерактивную карту -->
     <div class="map">
