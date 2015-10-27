@@ -71,12 +71,12 @@ body {
 
 .menu a {
     color: #7D7D7D;
-    text-decoration: none;
     display: block;
     padding: 41px 0px 2px 0;
     margin-right: 53px;
-    border-bottom: 2px solid #797979;
     letter-spacing: 1px;
+    border-bottom: 2px solid #797979;
+    text-decoration: none;
 }
 
 .main-page {
@@ -112,7 +112,7 @@ body {
 
 .main-picture {
     background: url("../img/start-pic.jpg")no-repeat 50% 50%;
-    height: 844px;
+    height: 700px;
     background-size: cover;
     min-width: 1285px;
 }
@@ -155,6 +155,7 @@ body {
     margin-bottom: -43px;
     margin-top: 0px;
     text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .info-left p {
@@ -214,18 +215,18 @@ body {
 }
 
 .feature-image {
-    background: url("../img/sprite-1.png") no-repeat -1% 46%;
+    background: url("../img/sprite-1.png") no-repeat 24px 4px;
     height: 75px;
     margin: 0 auto;
     width: 91px;
 }
 
 .hat {
-    background: url("../img/sprite-1.png") no-repeat 52% 46%;
+    background-position: -460px 9px;
 }
 
 .guitar {
-    background: url("../img/sprite-1.png") no-repeat 102% 46%;
+    background-position:  -916px 19px;
 }
 
 .btn {
@@ -245,11 +246,11 @@ body {
 }
 
 .btn:hover {
-    background: #1515bf;
+    background-color: #1515bf;
 }
 
 .btn:active {
-    background: #1515bf;
+    background-color: #1515bf;
 }
 
 .slider {
@@ -272,12 +273,13 @@ body {
 .slide li {
     width: 335px;
     text-align: center;
-    margin-right: 140px;
+    margin-right: 120px;
     display: block;
 }
 
 .slide li:first-child {
     margin-left: 0;
+    margin-right: 120px;
 }
 
 .slide li:last-child {
@@ -295,8 +297,7 @@ body {
 
 .slider-main {
     -webkit-transition: -webkit-transform 3s;
-    transition-timing-function: ease-in-out;
-    transition-delay: .5s;
+    transition-timing-function: ease-out;
     width: 300%;
 }
 
@@ -312,11 +313,11 @@ body {
 }
 
 .robert {
-    background: url("../img/opininons/robert.jpg") no-repeat 50% 50%;
+    background-image: url("../img/opininons/robert.jpg");
 }
 
 .slava {
-    background: url("../img/opininons/slava.jpg") no-repeat 50% 50%;
+    background-image: url("../img/opininons/slava.jpg");
 }
 
 .slider-controls {
@@ -392,10 +393,11 @@ input[id^="btn-"] {
 .description::after {
     position: absolute;
     content: "";
-    background: url("../img/pointer.png") no-repeat 50% 50%;
-    width: 25px;
+    background: url("../img/pointer.png") no-repeat 2px 0;
+    width: 66px;
     height: 25px;
     top: 67px;
+    left: 157px;
 }
 
 .opinions h3 {
@@ -651,7 +653,7 @@ footer {
 
 .main-picture-price {
     background: url("../img/price-main-pic.jpg")no-repeat 50% 50%;
-    height: 844px;
+    height: 700px;
     background-size: cover;
     min-width: 1285px;
     margin-bottom: -43px;
@@ -682,7 +684,7 @@ footer {
 .descripton-guitar-price h5 {
     color: #fff;
     font-size: 2.4em;
-    margin-top: 35px;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -775,11 +777,6 @@ footer {
 
 .list li:last-child::after {
     display: none;
-}
-
-.list li:hover {
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 .column h3 {
@@ -977,11 +974,11 @@ footer {
 }
 
 .robert1 {
-    background: url("../img/responses/robert1.jpg") no-repeat 50% 50%;
+    background-image: url("../img/responses/robert1.jpg");
 }
 
 .slava1 {
-    background: url("../img/responses/slava1.jpg") no-repeat 50% 50%;
+    background-image: url("../img/responses/slava1.jpg");
 }
 
 
