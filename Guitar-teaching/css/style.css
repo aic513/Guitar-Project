@@ -296,8 +296,8 @@ body {
 }
 
 .slider-main {
-    -webkit-transition: -webkit-transform 3s;
-    transition-timing-function: ease-out;
+    -webkit-transition: -webkit-transform 1s;
+    transition-timing-function: cubic-bezier(1,0,0,1);
     width: 300%;
 }
 
