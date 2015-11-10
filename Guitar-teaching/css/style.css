@@ -75,16 +75,17 @@ body {
     padding: 41px 0px 2px 0;
     margin-right: 53px;
     letter-spacing: 1px;
-    border-bottom: 2px solid #797979;
     text-decoration: none;
+    border-bottom: 2px solid #797979;
 }
 
-.main-page {
-    position: relative;
-    margin-left: 15px;
+.active-blue {
+    text-decoration: none;
+    border-bottom: 7px;
+    border-color:solid #1515bf; 
 }
 
-.main-page::before {
+/*.main-page::before {
     position: absolute;
     content: "";
     width: 65px;
@@ -92,7 +93,7 @@ body {
     left: -22px;
     top: 59px;
     margin-left: 20px;
-}
+}*/
 
 .contact-right {
     margin-right: 49px;
@@ -279,7 +280,7 @@ body {
 
 .slide li:first-child {
     margin-left: 0;
-    margin-right: 120px;
+    margin-right: 149px;
 }
 
 .slide li:last-child {
@@ -322,14 +323,13 @@ body {
 
 .slider-controls {
     position: absolute;
-    left: 50%;
     height: 25px;
     width: 80px;
     z-index: 5;
     top: 759px;
     background: #f2f2f2;
-    text-align: center;
     margin-left: -30px;
+    left: 50%;
 }
 
 .slider-controls label {
@@ -400,25 +400,28 @@ input[id^="btn-"] {
     left: 157px;
 }
 
+.opinions{
+    padding-top:1px; 
+}
 .opinions h3 {
     text-transform: uppercase;
     color: #787878;
     font-size: 1.6875em;
     letter-spacing: 1px;
-    text-align: center;
     font-weight: 500;
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     margin-bottom: 13px;
-    margin-top: 40px;
+    margin-top: 49px;
+    text-align: center;
 }
 
 .opinions p {
     font-size: 15px;
     color: #787878;
-    text-align: center;
     padding-left: 486px;
     padding-right: 479px;
     margin-bottom: 1px;
+    text-align: center;
 }
 
 .guitar-big {
@@ -468,6 +471,10 @@ input[id^="btn-"] {
     text-align: center;
     margin-bottom: 32px;
     margin-top: 143px;
+}
+
+.author-text p{
+    text-align: center;
 }
 
 .photo {
@@ -653,7 +660,7 @@ footer {
 
 .main-picture-price {
     background: url("../img/price-main-pic.jpg")no-repeat 50% 50%;
-    height: 700px;
+    height: 500px;
     background-size: cover;
     min-width: 1285px;
     margin-bottom: -43px;
@@ -664,7 +671,7 @@ footer {
     min-height: 121px;
     float: left;
     bottom: 462px;
-    margin-top: 210px;
+    margin-top: 40px;
 }
 
 .guitar-big-price {
@@ -694,8 +701,8 @@ footer {
     height: 90px;
     margin: 0 auto;
     margin-bottom: 190px;
-    text-align: center;
     margin-top: -43px;
+    text-align: center;
 }
 
 .description-choice-price h2 {
@@ -714,15 +721,13 @@ footer {
 }
 
 .description-choice-price::after {
-    position: absolute;
-    display: block;
-    content: "";
     width: 72px;
     height: 13px;
     background: #393939;
-    margin-bottom: 173px;
-    left: 46%;
+    content: "";
     top: 100%;
+    left: 37%;
+    margin-bottom: 173px;
 }
 
 .main-price-block {
@@ -737,15 +742,13 @@ footer {
     width: 260px;
     height: 538px;
     float: left;
-    margin-left: 32px;
-    margin-right: 39px;
+    margin-right: 63px;
     background-color: #323333;
     color: #cfcfcf;
 }
 
 .column:last-child {
-    margin-right: 21px;
-    margin-left: 6px;
+    margin-right: 0px;
 }
 
 .list {
@@ -793,6 +796,7 @@ footer {
     font-size: 1.375em;
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     font-style: italic;
+    margin-top: -6px;
 }
 
 .column::before {
@@ -844,8 +848,8 @@ footer {
     float: left;
     width: 260px;
     min-height: 120px;
-    margin-left: 33px;
-    margin-right: 39px;
+    margin-right: 59px;
+    margin-left: 10px;
 }
 
 .text-column-bottom:last-child {
@@ -920,18 +924,6 @@ footer {
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     font-weight: 600;
     margin-top: -15px;
-}
-
-.description-responses::after {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 72px;
-    height: 13px;
-    background: #393939;
-    margin-bottom: 173px;
-    left: 46%;
-    top: 118%;
 }
 
 .main-responses {
@@ -1021,18 +1013,6 @@ footer {
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     font-weight: 600;
     margin-top: -15px;
-}
-
-.description-contacts::after {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 72px;
-    height: 13px;
-    background: #393939;
-    margin-bottom: 173px;
-    left: 42%;
-    top: 100%;
 }
 
 .map {
@@ -1141,7 +1121,7 @@ form {
 .contact-form input[type="email"] {
     display: block;
     width: 186px;
-    padding: 9px 169px 13px 13px;
+    padding: 9px 4px 13px 13px;
     border: 2px solid #c0c0c0;
     margin-bottom: -10px;
     font-size: 17.34px;
@@ -1214,13 +1194,13 @@ input:-moz-placeholder {
 .contact-form input[type="text"],
 .contact-form input[type="tel"] {
     display: block;
-    width: 109px;
-    padding: 9px 169px 13px 13px;
+    width: 270px;
     border: 2px solid #c0c0c0;
     margin-bottom: -10px;
     font-size: 17.34px;
     color: #bdbdbd;
     background-color: #f3f3f3;
+    padding: 9px 4px 13px 13px;
 }
 
 input::-webkit-input-placeholder {
@@ -1255,7 +1235,7 @@ input:-moz-placeholder {
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
     margin-bottom: -5px;
-    width: 109px;
+    width: 270px;
 }
 
 .contact-form textarea {
