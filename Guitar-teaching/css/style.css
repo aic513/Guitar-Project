@@ -85,16 +85,6 @@ body {
     border-color:solid #1515bf; 
 }
 
-/*.main-page::before {
-    position: absolute;
-    content: "";
-    width: 65px;
-    border-bottom: 7px solid #1515bf;
-    left: -22px;
-    top: 59px;
-    margin-left: 20px;
-}*/
-
 .contact-right {
     margin-right: 49px;
 }
