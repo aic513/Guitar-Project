@@ -1,0 +1,280 @@
+/*fonts*/
+
+
+/* font-family: "MyriadProRegular"; */
+
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "SegoeUIRegular"; */
+
+@font-face {
+    font-family: "SegoeUIRegular";
+    src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+    src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*--STYLE--*/
+
+body {
+    background-color: #f2f2f2, #fff;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Arial", sans-serif;
+}
+
+.main-nav {
+    color: #707070;
+    font-size: 3.8em;
+    font-weight: 400;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.menu {
+    background-color: #fff;
+    min-width: 500px;
+    min-height: 99px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+}
+
+.menu li {
+    vertical-align: baseline;
+    font-size: 14px;
+    display: inline-block;
+    font-family: "MyriadProRegular", "Arial", sans-serif;
+}
+
+.menu a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: block;
+    padding: 42px 0 2px 0;
+    margin-right: 24px;
+    border-bottom: 2px solid #797979;
+}
+
+.main-page {
+    position: relative;
+    margin-left: 15px;
+}
+
+.main-page::before {
+    position: absolute;
+    top: 60px;
+    content: "";
+    width: 57px;
+    height: 3px;
+    margin-left: 20px;
+    border-bottom: 5px solid #1515bf;
+    left: -20px;
+}
+
+.btn {
+    font-family: "MyriadProRegular", "Arial", sans-serif;
+    display: block;
+    width: 98px;
+    background: #0e0e8a;
+    color: #fff;
+    line-height: 18px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 180px;
+    height: 21px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+.btn:hover {
+    background: #1515bf;
+}
+
+.btn:active {
+    background: #1515bf;
+}
+
+.heading {
+    text-decoration: none;
+    font-size: 17.3px;
+    color: #7c7c7c;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-weight: bold;
+    ;
+}
+
+.heading:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.specialization {
+    background-color: #fff;
+    min-width: 305px;
+    min-height: 340px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+}
+
+.specialization li {
+    font-size: 14px;
+    padding-left: 25px;
+    font-family: "MyriadProRegular", "Arial", sans-serif;
+}
+
+.specialization a {
+    color: #a4a4a4;
+    text-decoration: underline;
+    display: block;
+    padding-top: 15px;
+    margin-right: 24px;
+}
+
+.active-list {
+    font-weight: bold;
+}
+
+.active-list:hover {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.map {
+    min-width: 900px;
+    height: 533px;
+    background: url("img/map.jpg") no-repeat 50% 50%;
+    margin-top: 50px;
+    background-size: cover;
+}
+
+form {
+    margin-top: 450px;
+    margin-bottom: 100px;
+    width: 410px;
+    min-height: 115px;
+    background: #fff;
+    padding-left: 35px;
+    padding-top: 35px;
+}
+
+.contact-form input[type="email"] {
+    display: block;
+    width: 186px;
+    padding: 9px 169px 13px 13px;
+    border: 2px solid #c0c0c0;
+    margin-bottom: -10px;
+    font-size: 17.34px;
+}
+
+input::-webkit-input-placeholder {
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    color: #d8d8d8;
+}
+
+input:-moz-placeholder {
+    color: #d8d8d8;
+}
+
+
+/*
+input::-webkit-input-placeholder:hover{
+    color:#4d4d4d;
+}*/
+
+.contact-form input[type="email"]:hover {
+    color: #4d4d4d;
+}
+
+.contact-form input[type="email"]:hover {
+    color: #4d4d4d;
+    cursor: pointer;
+}
+
+.half-width {
+    margin-bottom: 15px;
+}
+
+.interest {
+    font-size: 17.34px;
+    color: #949494;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-weight: 600;
+    padding-right: 8px;
+}
+
+.submit-btn {
+    width: 195px;
+    height: 45px;
+    border: 2px solid #bec5c0;
+    background-color: #e6f2e8;
+    color: #bfc7c0;
+    font-size: 17.34px;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #c4f0ca;
+    color: #93a195;
+    cursor: pointer;
+}
+
+.submit-btn:active {
+    background-color: #c4f0ca;
+    color: #93a195;
+    cursor: pointer;
+}
+
+.features {
+    width: 300px;
+    height: 589px;
+    margin-bottom: 45px;
+    background-image: url("../img/grey.jpg");
+    margin-left: 45px;
+    padding-top: 55px;
+}
+
+.features p {
+    display: block;
+    color: #979898;
+    top: 46px;
+    left: 55px;
+    padding-bottom: 22px;
+    border-bottom: 2px solid #b4b4b4;
+    margin: 27px 10px 27px 15px;
+    text-align: center;
+    padding-left: 78px;
+    padding-right: 80px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.features p:first-child {
+    margin-top: 13px;
+    padding-left: 23px;
+    padding-right: 12px;
+}
+
+.features p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,1260 @@
+/*fonts*/
+
+
+/* font-family: "MyriadProRegular"; */
+
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "SegoeUIRegular"; */
+
+@font-face {
+    font-family: "SegoeUIRegular";
+    src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+    src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*--STYLE--*/
+
+
+/*Верстка первой страницы*/
+
+body {
+    background-color: #fff;
+    font-size: 16px;
+    font-family: "MyriadProRegular", "Arial", sans-serif;
+    color: #7D7D7D;
+}
+
+.layout-center-wrapper {
+    position: relative;
+    margin: 0px auto;
+    width: 1286px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    min-height: 99px;
+}
+
+.menu {
+    min-height: 99px;
+    min-width: 731px;
+    display: block;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #fff;
+}
+
+.menu li {
+    vertical-align: baseline;
+    font-size: 14px;
+    display: inline-block;
+    font-family: "MyriadProRegular", "Arial", sans-serif;
+}
+
+.menu a {
+    color: #7D7D7D;
+    display: block;
+    padding: 41px 0px 2px 0;
+    margin-right: 53px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 2px solid #797979;
+}
+
+.active-blue {
+    text-decoration: none;
+    border-bottom: 7px;
+    border-color:solid #1515bf; 
+}
+
+.contact-right {
+    margin-right: 49px;
+}
+
+.contact-right p:first-child {
+    font-size: 1.56em;
+    margin-top: 30px;
+    padding-left: 0px;
+}
+
+.contact-right p:last-child {
+    font-size: 15px;
+    margin-top: -25px;
+    padding-left: 37px;
+}
+
+.main-picture {
+    background: url("../img/start-pic.jpg")no-repeat 50% 50%;
+    height: 700px;
+    background-size: cover;
+    min-width: 1285px;
+}
+
+.big-supply {
+    width: 795px;
+    min-height: 121px;
+    float: left;
+    bottom: 462px;
+    margin-top: 210px;
+}
+
+
+/* Вспомогательные классы*/
+
+.to-left {
+    float: left;
+}
+
+.to-right {
+    float: right;
+}
+
+
+/*Вспомогательные классы*/
+
+.info-left {
+    width: 329px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    min-height: 120px;
+    margin-right: 5px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.info-left h3 {
+    font-size: 6.375em;
+    font-weight: bold;
+    margin-bottom: -43px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.info-left p {
+    font-size: 2.48em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 43px;
+    text-transform: uppercase;
+}
+
+.info-right {
+    width: 440px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border: 5px solid white;
+    font-size: 1.96em;
+    padding-left: 7px;
+    text-transform: uppercase;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-weight: 700;
+    margin-top: 34px;
+    text-transform: uppercase;
+    height: 137px;
+}
+
+.features {
+    color: #fff;
+    width: 1286px;
+    padding: 0;
+    margin-top: 148px;
+    margin-bottom: 191px;
+    list-style: none;
+}
+
+.features li {
+    width: 335px;
+    text-align: center;
+    margin-right: 140px;
+    display: block;
+}
+
+.features li:first-child {
+    margin-left: 0;
+}
+
+.features li:last-child {
+    margin-right: 0;
+}
+
+.feature-inside {
+    display: block;
+    font-size: 15px;
+    color: #878787;
+    letter-spacing: 1px;
+    margin-bottom: 52px;
+}
+
+.feature-image {
+    background: url("../img/sprite-1.png") no-repeat 24px 4px;
+    height: 75px;
+    margin: 0 auto;
+    width: 91px;
+}
+
+.hat {
+    background-position: -460px 9px;
+}
+
+.guitar {
+    background-position:  -916px 19px;
+}
+
+.btn {
+    width: 118px;
+    background: #0e0e8a;
+    color: #fff;
+    line-height: 18px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 118px;
+    text-decoration: none;
+    height: 17px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    display: block;
+}
+
+.btn:hover {
+    background-color: #1515bf;
+}
+
+.btn:active {
+    background-color: #1515bf;
+}
+
+.slider {
+    position: relative;
+    background: #f2f2f2;
+    min-width: 1286px;
+    min-height: 800px;
+}
+
+.slide {
+    color: #fff;
+    width: 1286px;
+    padding: 0;
+    margin-top: 85px;
+    margin-bottom: 112px;
+    list-style: none;
+    display: block;
+}
+
+.slide li {
+    width: 335px;
+    text-align: center;
+    margin-right: 120px;
+    display: block;
+}
+
+.slide li:first-child {
+    margin-left: 0;
+    margin-right: 149px;
+}
+
+.slide li:last-child {
+    margin-right: 0;
+}
+
+.slide-inside {
+    display: block;
+    font-size: 15px;
+    color: #878787;
+    letter-spacing: 1px;
+    margin-bottom: 42px;
+    padding-top: 24px;
+}
+
+.slider-main {
+    -webkit-transition: -webkit-transform 1s;
+    transition-timing-function: cubic-bezier(1,0,0,1);
+    width: 300%;
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.opinion-image {
+    height: 260px;
+    width: 326px;
+    margin: 0 auto;
+    background: url("../img/opininons/mary.jpg") no-repeat 50% 50%;
+}
+
+.robert {
+    background-image: url("../img/opininons/robert.jpg");
+}
+
+.slava {
+    background-image: url("../img/opininons/slava.jpg");
+}
+
+.slider-controls {
+    position: absolute;
+    height: 25px;
+    width: 80px;
+    z-index: 5;
+    top: 759px;
+    background: #f2f2f2;
+    margin-left: -30px;
+    left: 50%;
+}
+
+.slider-controls label {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 18px;
+    height: 18px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+input[id^="btn-"] {
+    display: none;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #484848;
+}
+
+#btn-1:checked ~ .slider-inner .slider-main {
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-main {
+    -webkit-transform: translate(-1286px);
+    -ms-transform: translate(-1286px);
+    transform: translate(-1286px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-main {
+    -webkit-transform: translate(-2572px);
+    -ms-transform: translate(-2572px);
+    transform: translate(-2572px);
+}
+
+.description h4 {
+    text-transform: uppercase;
+    color: #5f5f5f;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.description p {
+    color: #767676;
+    font-size: 14.45px;
+    margin-top: -21px;
+    margin-bottom: 43px;
+}
+
+.description {
+    position: relative;
+}
+
+.description::after {
+    position: absolute;
+    content: "";
+    background: url("../img/pointer.png") no-repeat 2px 0;
+    width: 66px;
+    height: 25px;
+    top: 67px;
+    left: 157px;
+}
+
+.opinions{
+    padding-top:1px; 
+}
+.opinions h3 {
+    text-transform: uppercase;
+    color: #787878;
+    font-size: 1.6875em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    margin-bottom: 13px;
+    margin-top: 49px;
+    text-align: center;
+}
+
+.opinions p {
+    font-size: 15px;
+    color: #787878;
+    padding-left: 486px;
+    padding-right: 479px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.guitar-big {
+    background-size: cover;
+    background: url("../img/guitar-picture.jpg") no-repeat 50% 50%;
+    min-width: 1285px;
+    height: 422px;
+}
+
+.descripton-guitar {
+    border: 3px solid #fff;
+    height: 226px;
+    width: 816px;
+    margin-top: 90px;
+}
+
+.descripton-guitar h5 {
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.layout-center-wrapper-small {
+    width: 820px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.author {
+    min-height: 850px;
+    margin-top: 115px;
+    margin-bottom: -42px;
+}
+
+.author-description {
+    min-height: 290px;
+    margin-bottom: 42px;
+}
+
+.author-name {
+    font-size: 1.5em;
+    color: #1e1e1e;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 143px;
+}
+
+.author-text p{
+    text-align: center;
+}
+
+.photo {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.author-features {
+    min-height: 163px;
+    margin-bottom: 162px;
+}
+
+.number {
+    width: 85px;
+    height: 80px;
+    text-align: center;
+    border: 4px solid #ececec;
+    margin: 0 auto;
+}
+
+.number p {
+    font-size: 3.125em;
+    color: #454545;
+    margin-top: -3px;
+    margin-bottom: -4px;
+}
+
+.author-features-numbers {
+    display: inline-block;
+}
+
+.number-text {
+    padding-left: -3px;
+    font-size: 14px;
+    color: #1e1e1e;
+    margin: 0 auto;
+}
+
+.author-features-wrapper {
+    width: 124px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 34px;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.author-features-wrapper:last-child {
+    margin-right: 0;
+}
+
+.author-features-wrapper:first-child {
+    margin-left: 24px;
+}
+
+.author-phone {
+    min-height: 185px;
+    text-align: center;
+    color: #7c7c7c;
+}
+
+.call {
+    font-size: 2.9em;
+    margin-bottom: 30px;
+}
+
+.call-number {
+    font-size: 6.4em;
+    margin-top: -19px;
+    position: relative;
+    letter-spacing: 1px;
+    padding-left: 92px;
+    margin-bottom: 146px;
+}
+
+.call-number::before {
+    content: "";
+    position: absolute;
+    background: url("../img/call.png");
+    height: 81px;
+    width: 81px;
+    left: 4px;
+    top: 20px;
+    margin-right: 0px;
+}
+
+footer {
+    background-color: #484848;
+    min-width: 1284px;
+}
+
+.footer-column:last-child {
+    margin-right: 0;
+    font-style: italic;
+}
+
+.footer-column {
+    width: 335px;
+    margin-right: 140px;
+    min-height: 300px;
+    color: #fff;
+    padding-top: 100px;
+}
+
+.footer-column h3 {
+    font-size: 1.56em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.footer-middle {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-height: 82px;
+}
+
+.phones-kinds li {
+    font-size: 14px;
+    margin-bottom: 11px;
+}
+
+.phones-numbers {
+    font-size: 20px;
+}
+
+.social-buttons {
+    width: 200px;
+    height: 30px;
+    margin-top: 110px;
+}
+
+.btn-social {
+    display: inline-block;
+    color: transparent;
+    background: url("../img/social-sprite.png") no-repeat -91px -4px;
+    width: 23px;
+    height: 23px;
+    margin-right: 8px;
+}
+
+.btn-social:last-child {
+    margin-right: 0;
+}
+
+.btn-social-fb {
+    background-position: -116px -3px;
+}
+
+.btn-social-inst {
+    background-position: -62px -4px;
+}
+
+.btn-social-vk {
+    background-position: -140px -4px;
+}
+
+.btn-social-lk {
+    background-position: -3px -4px;
+}
+
+.btn-social-youtube {
+    background-position: -33px -2px;
+}
+
+
+/*Верстка страницы с ценами*/
+
+.main-page-grey {
+    position: relative;
+}
+
+.main-page-grey::before {
+    position: absolute;
+    content: "";
+    width: 41px;
+    border-bottom: 7px solid #787878;
+    left: -21px;
+    top: 59px;
+    margin-left: 20px;
+}
+
+.main-picture-price {
+    background: url("../img/price-main-pic.jpg")no-repeat 50% 50%;
+    height: 500px;
+    background-size: cover;
+    min-width: 1285px;
+    margin-bottom: -43px;
+}
+
+.big-supply {
+    width: 795px;
+    min-height: 121px;
+    float: left;
+    bottom: 462px;
+    margin-top: 40px;
+}
+
+.guitar-big-price {
+    background-size: cover;
+    background: url("../img/guitar-picture-price.jpg") no-repeat 50% 50%;
+    min-width: 1285px;
+    height: 433px;
+}
+
+.descripton-guitar-price {
+    border: 3px solid #fff;
+    height: 226px;
+    width: 816px;
+    margin-top: 90px;
+}
+
+.descripton-guitar-price h5 {
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.description-choice-price {
+    position: relative;
+    width: 380px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 190px;
+    margin-top: -43px;
+    text-align: center;
+}
+
+.description-choice-price h2 {
+    font-size: 1.6875em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.description-choice-price p {
+    font-size: 15px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.description-choice-price::after {
+    width: 72px;
+    height: 13px;
+    background: #393939;
+    content: "";
+    top: 100%;
+    left: 37%;
+    margin-bottom: 173px;
+}
+
+.main-price-block {
+    width: 1285px;
+    height: 583px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+}
+
+.column {
+    position: relative;
+    width: 260px;
+    height: 538px;
+    float: left;
+    margin-right: 63px;
+    background-color: #323333;
+    color: #cfcfcf;
+}
+
+.column:last-child {
+    margin-right: 0px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    position: relative;
+    width: 175px;
+    height: 80px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 300;
+    display: block;
+}
+
+.list li::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 184px;
+    height: 1px;
+    background: #fff;
+    left: 1%;
+    top: 68%;
+}
+
+.list li:last-child::after {
+    display: none;
+}
+
+.column h3 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.price {
+    text-align: center;
+    font-size: 1.375em;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-style: italic;
+    margin-top: -6px;
+}
+
+.column::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 160px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-bottom: 50px solid #323333;
+    top: -57%;
+    left: 11%;
+}
+
+.column::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 160px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 50px solid #323333;
+    border-bottom: 50px solid transparent;
+    top: 100%;
+    left: 11%;
+}
+
+.description-price-bottom {
+    width: 836px;
+    height: 30px;
+    color: #7c7c7c;
+    font-size: 15px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.column-text {
+    width: 1285px;
+    height: 170px;
+    margin-top: 91px;
+    margin-bottom: 148px;
+}
+
+.text-column-bottom {
+    float: left;
+    width: 260px;
+    min-height: 120px;
+    margin-right: 59px;
+    margin-left: 10px;
+}
+
+.text-column-bottom:last-child {
+    margin-right: 0;
+    margin-left: 9px;
+}
+
+.text-column-bottom p {
+    font-style: 15px;
+    color: #7c7c7c;
+    text-align: center;
+}
+
+
+/*Верстка страницы с отзывами*/
+
+.main-page-grey-opinions {
+    position: relative;
+}
+
+.main-page-grey-opinions::before {
+    position: absolute;
+    content: "";
+    width: 59px;
+    border-bottom: 7px solid #787878;
+    left: -21px;
+    top: 59px;
+    margin-left: 20px;
+}
+
+.guitar-big-responses {
+    background-size: cover;
+    background: url("../img/responses-pic.jpg") no-repeat 50% 50%;
+    min-width: 1285px;
+    height: 423px;
+}
+
+.descripton-guitar-responses {
+    border: 3px solid #fff;
+    height: 226px;
+    width: 816px;
+    margin-top: 90px;
+}
+
+.descripton-guitar-responses h5 {
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.description-responses {
+    position: relative;
+    width: 380px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 190px;
+    text-align: center;
+    margin-top: -43px;
+}
+
+.description-responses h2 {
+    font-size: 1.6875em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.description-responses p {
+    font-size: 15px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.main-responses {
+    color: #fff;
+    width: 1286px;
+    padding: 0;
+    margin-top: 148px;
+    margin-bottom: 191px;
+    list-style: none;
+}
+
+.main-responses li {
+    width: 335px;
+    text-align: center;
+    margin-right: 140px;
+    display: block;
+}
+
+.main-responses li:first-child {
+    margin-left: 0;
+}
+
+.main-responses li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.main-responses-inside {
+    display: block;
+    font-size: 15px;
+    color: #878787;
+    letter-spacing: 1px;
+    margin-bottom: 52px;
+}
+
+.main-responses-image {
+    height: 260px;
+    width: 326px;
+    margin: 0 auto;
+    background: url("../img/responses/mary1.jpg") no-repeat 50% 50%;
+}
+
+.robert1 {
+    background-image: url("../img/responses/robert1.jpg");
+}
+
+.slava1 {
+    background-image: url("../img/responses/slava1.jpg");
+}
+
+
+/*Верстка страницы с контактами*/
+
+.main-page-grey-contacts {
+    position: relative;
+}
+
+.main-page-grey-contacts::before {
+    position: absolute;
+    content: "";
+    width: 76px;
+    border-bottom: 7px solid #787878;
+    left: -21px;
+    top: 59px;
+    margin-left: 20px;
+}
+
+.description-contacts {
+    position: relative;
+    width: 380px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 133px;
+    text-align: center;
+    margin-top: -43px;
+}
+
+.description-contacts h2 {
+    font-size: 1.6875em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.description-contacts p {
+    font-size: 15px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+.map {
+    height: 533px;
+    min-width: 1285px;
+    background: url("img/map.jpg") no-repeat 50% 50%;
+    margin-top: 50px;
+    background-size: cover;
+}
+
+.guitar-big-contacts {
+    background-size: cover;
+    background: url("../img/contacts-guitar-pic.jpg") no-repeat 50% 50%;
+    min-width: 1285px;
+    height: 433px;
+}
+
+.descripton-guitar-contacts {
+    border: 3px solid #fff;
+    height: 226px;
+    width: 816px;
+    margin-top: 90px;
+}
+
+.descripton-guitar-contacts h5 {
+    color: #fff;
+    font-size: 2.4em;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.contacts-text {
+    width: 1285px;
+    height: 170px;
+    margin-top: 91px;
+    margin-bottom: 148px;
+}
+
+.contacts-column-bottom {
+    float: left;
+    width: 262px;
+    min-height: 120px;
+    margin-left: 33px;
+    margin-right: 39px;
+}
+
+.contacts-column-bottom:last-child {
+    margin-right: 0;
+    margin-left: 9px;
+}
+
+.contacts-column-bottom p {
+    font-style: 15px;
+    color: #7c7c7c;
+    text-align: justify;
+}
+
+.contact-phone {
+    font-size: 1.8em;
+    margin-top: 18px;
+}
+
+.contact-phone:first-child {
+    margin-bottom: 14px;
+}
+
+.contact-phone:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.contact-phone-description {
+    text-align: left;
+}
+
+.contact-email {
+    font-size: 1.8em;
+}
+
+.contact-email:first-child {
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+.contact-email {
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+.contact-email-description {
+    margin-top: -5px;
+    margin-bottom: -27px;
+}
+
+.music {
+    margin-top: 23px;
+    margin-bottom: -13px;
+}
+
+form {
+    margin-top: 83px;
+    padding-bottom: 0px;
+    margin-bottom: 117px;
+    margin: 0;
+}
+
+.contact-form input[type="email"] {
+    display: block;
+    width: 186px;
+    padding: 9px 4px 13px 13px;
+    border: 2px solid #c0c0c0;
+    margin-bottom: -10px;
+    font-size: 17.34px;
+    background-color: #f3f3f3;
+}
+
+input::-webkit-input-placeholder {
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    color: #d8d8d8;
+}
+
+input:-moz-placeholder {
+    color: #d8d8d8;
+}
+
+.contact-form input[type="email"]:hover {
+    color: #d8d8d8;
+    cursor: pointer;
+}
+
+.contact-form input[type="text"]:hover {
+    color: #d8d8d8;
+    cursor: pointer;
+}
+
+.contact-form input[type="tel"]:hover {
+    color: #d8d8d8;
+    cursor: pointer;
+}
+
+.half-width {
+    margin-bottom: 15px;
+}
+
+.submit-btn {
+    display: inline-block;
+    width: 196px;
+    height: 47px;
+    border: 2px solid #bec5c0;
+    background-color: #e6f2e8;
+    color: #bfc7c0;
+    font-size: 17.34px;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #c4f0ca;
+    color: #93a195;
+    cursor: pointer;
+}
+
+.submit-btn:active {
+    background-color: #c4f0ca;
+    color: #93a195;
+    cursor: pointer;
+}
+
+.form-all {
+    width: 1217px;
+    min-height: 173px;
+    border-bottom: 1px solid #d7d7d7;
+    margin: 0 auto;
+}
+
+.form-all:nth-child(2) {
+    border: none;
+    margin-top: 30px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"] {
+    display: block;
+    width: 270px;
+    border: 2px solid #c0c0c0;
+    margin-bottom: -10px;
+    font-size: 17.34px;
+    color: #bdbdbd;
+    background-color: #f3f3f3;
+    padding: 9px 4px 13px 13px;
+}
+
+input::-webkit-input-placeholder {
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    color: #bdbdbd;
+}
+
+input:-moz-placeholder {
+    color: #d8d8d8;
+}
+
+.form-position {
+    display: block;
+    margin-top: 32px;
+}
+
+.form-position:first-child {
+    margin-left: -6px;
+    width: 262px;
+    margin-right: 30px;
+}
+
+.form-position:nth-child(2) {
+    margin-right: 31px;
+    margin-left: 28px;
+}
+
+.form-position:last-child {
+    margin-right: 0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    margin-bottom: -5px;
+    width: 270px;
+}
+
+.contact-form textarea {
+    width: 567px;
+    height: 82px;
+    background-color: #f3f3f3;
+    border: 2px solid #c0c0c0;
+    font-size: 17.34px;
+    color: #bdbdbd;
+}
+
+.contact-form select {
+    background-color: #f3f3f3;
+    border: 2px solid #c0c0c0;
+    height: 47px;
+    width: 295px;
+}
+
+.contact-form input[type="date"] {
+    background-color: #f3f3f3;
+    border: 2px solid #c0c0c0;
+    height: 43px;
+    width: 289px;
+}
+
+.form-bottom {
+    display: inline-block;
+    font-size: 17.34px;
+    color: #bdbdbd;
+    margin-right: 27px;
+    margin-left: -4px;
+}
