@@ -22,13 +22,13 @@ def contact():
 
 
 @app.route("/price")
-def contact():
+def price():
     return render_template('price.html')
 
 
-@app.route("/opininons")
-def contact():
-    return render_template('opininons.html')
+@app.route("/feedback")
+def feedback():
+    return 'Страница готовится'
 
 
 if __name__ == "__main__":
