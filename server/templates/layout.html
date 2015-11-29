@@ -33,7 +33,11 @@
         </div>
         <!-- Закрыли центровщик -->
         <!--Верстаем главную картинку сайта-->
+	{% if index %}
         <div class="main-picture">
+	{% else %}
+        <div class="main-picture-price">
+	{% endif %}
             <div class="layout-center-wrapper clearfix">
                 <!-- Блок с предложением -->
                 <div class="big-supply clearfix">
