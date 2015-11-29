@@ -15,12 +15,17 @@
             <!-- Открываем центровщик -->
             <nav>
                 <ul class="menu to-left">
-                    <li><a class="active-blue" href="#">Главная</a></li>
-                    <li><a href="/price">Цены</a></li>
-                    <li><a href="#">Методика обучения</a></li>
-                    <li><a href="/opinions">Отзывы</a></li>
-                    <li><a href="#">Условия</a></li>
-                    <li><a href="/contact">Контакты</a></li>
+                   {% set navigation = [
+                      ('index', 'Главная'),
+                      ('price', 'Цены'),
+                      ('#', 'Методика обучения'),
+                      ('feedback', 'Отзывы'),
+                      ('#', 'Условия'),
+                      ('contact', 'Контакты'),
+                    ] -%}
+                    {% for url, title in navigation %}
+                    <li><a{% if request.url_rule.endpoint == url %} class="active-blue"{% endif %} href="/{% if url != "index" %}{{ url }}{% endif %}">{{ title }}</a></li>
+                    {% endfor %}
                 </ul>
                 <!-- Закрыли меню -->
                 <!-- Верстаем правую верхнюю форму с контактами -->

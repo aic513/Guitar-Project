@@ -79,10 +79,9 @@ body {
     border-bottom: 2px solid #797979;
 }
 
-.active-blue {
-    text-decoration: none;
-    border-bottom: 7px;
-    border-color:solid #1515bf; 
+.menu .active-blue {
+    border-width: 7px;
+    border-color: #1515bf; 
 }
 
 .contact-right {
