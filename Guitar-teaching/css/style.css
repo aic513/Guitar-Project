@@ -1271,6 +1271,42 @@ input:-moz-placeholder {
 /*Закрыли форму на странице контактов*/
 
 /*Форма связи по нажатию на главную кратинку*/
+
+@-webkit-keyframes login-open {
+    0% {
+        -webkit-transform: translateY(-2000px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes login-open {
+    0% {
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
 .write-us {
     display:none;
     position: absolute;
@@ -1374,16 +1410,18 @@ label {
 }
 
 .form-submit-btn{
+    padding-bottom: 5px;
     margin-right: 25px;
+    height: 41px;
 }
 
 .form-esc-btn {
     line-height: 1.5;
     color: #bfc7c0;
-    margin-right: 0;
     display: inline-block;
     border: 2px solid #bec5c0;
     background: #e6f2e8;
+    height: 41px;
 }
 
 .form-esc-btn:hover {
