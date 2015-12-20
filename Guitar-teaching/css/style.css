@@ -31,8 +31,8 @@
 body {
     background-color: #fff;
     font-size: 16px;
-    font-family: "MyriadProRegular", "Arial", sans-serif;
     color: #7D7D7D;
+    font-family: "MyriadProRegular", "Arial", sans-serif;
 }
 
 .layout-center-wrapper {
@@ -595,7 +595,13 @@ footer {
 .social-buttons {
     width: 200px;
     height: 30px;
-    margin-top: 110px;
+    margin-top: 32px;
+}
+
+.social-buttons a{
+    color:#1515bf;
+    text-decoration:none;
+    font-style: italic;
 }
 
 .btn-social {
@@ -1008,7 +1014,7 @@ footer {
 .map {
     height: 533px;
     min-width: 1285px;
-    background: url("img/map.jpg") no-repeat 50% 50%;
+    background: url("../img/map.jpg") no-repeat 50% 50%;
     margin-top: 50px;
     background-size: cover;
 }
@@ -1077,13 +1083,9 @@ footer {
     text-align: left;
 }
 
-.contact-email {
-    font-size: 1.8em;
-}
-
 .contact-email:first-child {
-    margin-top: 18px;
     margin-bottom: 7px;
+    margin-top: 18px;
 }
 
 .contact-email {
@@ -1101,6 +1103,10 @@ footer {
     margin-bottom: -13px;
 }
 
+
+
+
+/*--Основная форма на странице контактов*/
 form {
     margin-top: 83px;
     padding-bottom: 0px;
@@ -1143,18 +1149,22 @@ input:-moz-placeholder {
 }
 
 .half-width {
-    margin-bottom: 15px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: -4px;
+    margin-bottom: 20px;
 }
 
 .submit-btn {
     display: inline-block;
     width: 196px;
     height: 47px;
-    border: 2px solid #bec5c0;
-    background-color: #e6f2e8;
-    color: #bfc7c0;
     font-size: 17.34px;
     text-transform: uppercase;
+    background-color: #e6f2e8;
+    border: 2px solid #bec5c0;
+    color: #bfc7c0;
 }
 
 .submit-btn:hover {
@@ -1188,7 +1198,6 @@ input:-moz-placeholder {
     border: 2px solid #c0c0c0;
     margin-bottom: -10px;
     font-size: 17.34px;
-    color: #bdbdbd;
     background-color: #f3f3f3;
     padding: 9px 4px 13px 13px;
 }
@@ -1258,3 +1267,147 @@ input:-moz-placeholder {
     margin-right: 27px;
     margin-left: -4px;
 }
+
+/*Закрыли форму на странице контактов*/
+
+/*Форма связи по нажатию на главную кратинку*/
+.write-us {
+    display:none;
+    position: absolute;
+    left: 50%;
+    margin-left: -310px;
+    width: 470px;
+    padding: 50px 80px;
+    background: #fff;
+    box-shadow: 0 23px 40px #626363;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.125;
+    z-index: 100;
+    top: 74px;
+    height: 268px;
+}
+
+.cross-close {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    width: 41px;
+    height: 41px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.cross-close img {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.contact-form-on-button{
+    width: 479px;
+    margin: 0 auto;
+    min-height: 263px;
+}
+
+.half-width {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: -4px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.contact-form-on-button input[type="text"],
+.contact-form-on-button input[type="email"],
+.contact-form-on-button textarea {
+    display: block;
+    width: 186px;
+    padding: 7px 15px;
+    border: 2px solid #c0c0c0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #bdbdbd;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    background-color: #f3f3f3;
+}
+
+.contact-form-on-button textarea {
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+.contact-form-on-button input[type="text"]:hover,
+.contact-form-on-button input[type="email"]:hover,
+.contact-form-on-button textarea:hover {
+    cursor: pointer;
+}
+
+.contact-form-on-button input[type="text"]:active,
+.contact-form-on-button input[type="email"]:active,
+.contact-form-on-button textarea:active {
+    color: #d8d8d8;
+    cursor: pointer;
+}
+
+.form-submit-btn,
+.form-esc-btn {
+    font-size: 17.34px;
+    display: block;
+    vertical-align: baseline;
+    width: 220px;
+    float: left;
+    margin-left: 0;
+    height: 32px;
+    border: none;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-submit-btn{
+    margin-right: 25px;
+}
+
+.form-esc-btn {
+    line-height: 1.5;
+    color: #bfc7c0;
+    margin-right: 0;
+    display: inline-block;
+    border: 2px solid #bec5c0;
+    background: #e6f2e8;
+}
+
+.form-esc-btn:hover {
+    background-color: #c4f0ca;
+    color: #93a195;
+    cursor: pointer;
+}
+
+.form-esc-btn:active {
+    background: #d5d5d5;
+    color: black;
+    box-shadow: inset 0 3px 0 0 #b5b5b5;
+}
+
+.write-us-show {
+    display: block;
+    -webkit-animation: login-open 0.4s;
+    animation: login-open 2s;
+}
+
+.login-popup-error {
+    -webkit-animation: login-error 0.5s;
+    animation: login-error 0.5s;
+}
+
+
+/*END*/
