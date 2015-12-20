@@ -591,10 +591,10 @@ footer {
     font-size: 20px;
 }
 
-.social-buttons {
-    width: 200px;
-    height: 30px;
-    margin-top: 110px;
+.social-buttons a {
+    color: #1515bf;
+    text-decoration: none;
+    font-style: italic;
 }
 
 .btn-social {
