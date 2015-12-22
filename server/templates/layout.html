@@ -118,5 +118,21 @@
     </div>
     <!-- Закончили форму связи -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- Статистика сайта -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["setDomains", ["*.guitar40.ru"]]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//stat.z-gu.ru/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 22]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <noscript><p><img src="//stat.z-gu.ru/piwik.php?idsite=22" style="border:0;" alt="" /></p></noscript>
+    <!-- Конец кода статистики -->
 </body>
 </html>
