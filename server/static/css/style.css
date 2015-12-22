@@ -31,8 +31,8 @@
 body {
     background-color: #fff;
     font-size: 16px;
-    color: #7D7D7D;
     font-family: "MyriadProRegular", "Arial", sans-serif;
+    color: #7D7D7D;
 }
 
 .layout-center-wrapper {
@@ -79,10 +79,9 @@ body {
     border-bottom: 2px solid #797979;
 }
 
-.active-blue {
-    text-decoration: none;
-    border-bottom: 7px;
-    border-color:solid #1515bf; 
+.menu .active-blue {
+    border-width: 7px;
+    border-color: #1515bf; 
 }
 
 .contact-right {
@@ -178,7 +177,7 @@ body {
     width: 1286px;
     padding: 0;
     margin-top: 148px;
-    margin-bottom: 191px;
+    margin-bottom: 120px;
     list-style: none;
 }
 
@@ -592,15 +591,9 @@ footer {
     font-size: 20px;
 }
 
-.social-buttons {
-    width: 200px;
-    height: 30px;
-    margin-top: 32px;
-}
-
-.social-buttons a{
-    color:#1515bf;
-    text-decoration:none;
+.social-buttons a {
+    color: #1515bf;
+    text-decoration: none;
     font-style: italic;
 }
 
@@ -660,8 +653,35 @@ footer {
     background-size: cover;
     min-width: 1285px;
     margin-bottom: -43px;
+    position:relative;
 }
 
+.main-picture-price:before{
+    content: "";
+    position: absolute;
+    display: block;
+    border-left: 680px solid white;
+    border-right: 100px solid transparent;
+    border-top: 60px solid transparent;
+    border-bottom: 100px solid transparent;
+    top: 76%;
+    left: 0%;
+
+}
+
+.main-picture-price:after{
+    right: 0px;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    border-left: 678px solid transparent;
+    border-right: 668px solid white;
+    border-top: 59px solid transparent;
+    border-bottom: 100px solid transparent;
+    top: 76%;
+}
 .big-supply {
     width: 795px;
     min-height: 121px;
@@ -729,7 +749,7 @@ footer {
 .main-price-block {
     width: 1285px;
     height: 583px;
-    margin: 0 auto;
+    margin-left:26px;
     margin-bottom: 51px;
 }
 
@@ -845,7 +865,7 @@ footer {
     width: 260px;
     min-height: 120px;
     margin-right: 59px;
-    margin-left: 10px;
+    margin-left: 17px;
 }
 
 .text-column-bottom:last-child {
@@ -1014,7 +1034,7 @@ footer {
 .map {
     height: 533px;
     min-width: 1285px;
-    background: url("../img/map.jpg") no-repeat 50% 50%;
+    background: url("img/map.jpg") no-repeat 50% 50%;
     margin-top: 50px;
     background-size: cover;
 }
@@ -1083,9 +1103,13 @@ footer {
     text-align: left;
 }
 
+.contact-email {
+    font-size: 1.8em;
+}
+
 .contact-email:first-child {
-    margin-bottom: 7px;
     margin-top: 18px;
+    margin-bottom: 7px;
 }
 
 .contact-email {
@@ -1103,10 +1127,6 @@ footer {
     margin-bottom: -13px;
 }
 
-
-
-
-/*--Основная форма на странице контактов*/
 form {
     margin-top: 83px;
     padding-bottom: 0px;
@@ -1149,22 +1169,18 @@ input:-moz-placeholder {
 }
 
 .half-width {
-    width: 50%;
-    display: inline-block;
-    vertical-align: baseline;
-    margin-right: -4px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .submit-btn {
     display: inline-block;
     width: 196px;
     height: 47px;
+    border: 2px solid #bec5c0;
+    background-color: #e6f2e8;
+    color: #bfc7c0;
     font-size: 17.34px;
     text-transform: uppercase;
-    background-color: #e6f2e8;
-    border: 2px solid #bec5c0;
-    color: #bfc7c0;
 }
 
 .submit-btn:hover {
@@ -1197,7 +1213,8 @@ input:-moz-placeholder {
     width: 270px;
     border: 2px solid #c0c0c0;
     margin-bottom: -10px;
-    font-size: 17.34px;
+    font-size: 17px;
+    color: #bdbdbd;
     background-color: #f3f3f3;
     padding: 9px 4px 13px 13px;
 }
@@ -1242,7 +1259,7 @@ input:-moz-placeholder {
     height: 82px;
     background-color: #f3f3f3;
     border: 2px solid #c0c0c0;
-    font-size: 17.34px;
+    font-size: 17px;
     color: #bdbdbd;
 }
 
@@ -1262,58 +1279,20 @@ input:-moz-placeholder {
 
 .form-bottom {
     display: inline-block;
-    font-size: 17.34px;
+    font-size: 17px;
     color: #bdbdbd;
     margin-right: 27px;
     margin-left: -4px;
 }
 
-/*Закрыли форму на странице контактов*/
-
-/*Форма связи по нажатию на главную кратинку*/
-
-@-webkit-keyframes login-open {
-    0% {
-        -webkit-transform: translateY(-2000px);
-    }
-    70% {
-        -webkit-transform: translateY(30px);
-    }
-    90% {
-        -webkit-transform: translateY(-10px);
-    }
-    100% {
-        -webkit-transform: translateY(0);
-    }
-}
-
-@keyframes login-open {
-    0% {
-        -webkit-transform: translateY(-2000px);
-        transform: translateY(-2000px);
-    }
-    70% {
-        -webkit-transform: translateY(30px);
-        transform: translateY(30px);
-    }
-    90% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
 
 .write-us {
     display:none;
-    position: absolute;
+    position: fixed;
     left: 50%;
     margin-left: -310px;
     width: 470px;
-    padding: 50px 80px;
+    padding: 30px 80px;
     background: #fff;
     box-shadow: 0 23px 40px #626363;
     font-weight: 500;
@@ -1321,7 +1300,6 @@ input:-moz-placeholder {
     line-height: 1.125;
     z-index: 100;
     top: 74px;
-    height: 268px;
 }
 
 .cross-close {
@@ -1396,7 +1374,7 @@ label {
 
 .form-submit-btn,
 .form-esc-btn {
-    font-size: 17.34px;
+    font-size: 17px;
     display: block;
     vertical-align: baseline;
     width: 220px;
@@ -1446,6 +1424,3 @@ label {
     -webkit-animation: login-error 0.5s;
     animation: login-error 0.5s;
 }
-
-
-/*END*/

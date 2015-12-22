@@ -1,56 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Курсы гитары в Калуге </title>
-    <link href="img/guitar.ico" type="image/ico" rel="shortcut icon">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <div class="layout-center-wrapper clearfix">
-            <!-- Открываем центровщик -->
-            <nav>
-                <ul class="menu to-left">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a class="main-page-grey" href="price.html">Цены</a></li>
-                    <li><a href="#">Методика обучения</a></li>
-                    <li><a href="opininons.html">Отзывы</a></li>
-                    <li><a href="#">Условия</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-                <!-- Закрыли меню -->
-                <!-- Верстаем правую верхнюю форму с контактами -->
-                <div class="contact-right to-right">
-                    <p>8 (953) 333-49-71</p>
-                    <p>Телефон для связи</p>
-                </div>
-                <!--Закрыли формус контактами  -->
-            </nav>
-        </div>
-        <!-- Закрыли центровщик -->
-        <!--Верстаем главную картинку сайта-->
-        <div class="main-picture-price">
-            <div class="layout-center-wrapper clearfix">
-                <!-- Блок с предложением -->
-                <div class="big-supply clearfix">
-                    <div class="info-left to-left" href="#">
-                        <h3>Курсы</h3>
-                        <p>игры на гитаре</p>
-                    </div>
-                    <a class="info-right to-right" href="#">
-                        <p>Записаться на курсы можно прямо сейчас</p>
-                    </a>
-                </div>
-                <!-- Закрыли блок с предложениями -->
-            </div>
-        </div>
-        <!--  Закрыли главную картинку-->
-    </header>
-    <div class="layout-center-wrapper clearfix">
+{% extends "layout.html" %}
+{% block body %}
+<div class="layout-center-wrapper clearfix">
         <div class="description-choice-price">
             <h2>Цены и тарифы на курсы</h2>
             <p>Выберите подходящий себе тариф</p>
@@ -66,32 +16,32 @@
                     <li>Уверенное владение инструментом</li>
                     <li>Хорошая база для дальнейшего обучения</li>
                 </ul>
-                <p class="price">.- 4.800</p>
+                <p class="price">.- 4.000</p>
             </div>
             <div class="column">
                 <h3> Курс<br> аккомпанемента</h3>
                 <ul class="list">
-                    <li>Для тех,кто хочет научиться петь под гитару</li>
+                    <li>Хотите петь под гитару? Легко!</li>
                     <li>от 3 до 4 месяцев для постановки навыка</li>
-                    <li>Только практика</li>
+                    <li>Только практика, практика, практика</li>
                     <li>Сможете спеть любую любимую песню</li>
                     <li>Станете душой любой компании</li>
                 </ul>
-                <p class="price">.- 5.000</p>
+                <p class="price">.- 4.400</p>
             </div>
             <div class="column">
                 <h3>Проф-курс электрогитары</h3>
                 <ul class="list">
-                    <li>Для тех, кто хочет отрываться по-взрослому</li>
+                    <li>Нужно оторваться по-взрослому? Вперед!</li>
                     <li>от 6 до 8 месяцев для постановки навыка</li>
                     <li>Обучение по зарубежным методикам</li>
-                    <li>Учим гармонию, импровизацию и многое другое</li>
+                    <li>Блюз, рок, импровизация ждут тебя</li>
                     <li>Бары и танцплощадки ждут Вас</li>
                 </ul>
-                <p class="price">.- 6.000</p>
+                <p class="price">.- 4.800</p>
                          </div>
             <div class="column">
-                <h3>Проф-курс классической гитары</h3>
+                <h3>Проф-курс для виртуозов</h3>
                 <ul class="list">
                     <li>Углубленный курс игры на гитаре</li>
                     <li>от 8 до 12 месяцев для постановки навыка</li>
@@ -99,7 +49,7 @@
                     <li>Развитие пальцевой беглости</li>
                     <li>Уровень студента муз. училища</li>
                 </ul>
-                <p class="price">.- 6.000</p>
+                <p class="price">.- 5.000</p>
             </div>
         </div>
         <!-- Закрыли блоки -->
@@ -108,16 +58,16 @@
         </div>
         <div class="column-text clearfix">
             <div class="text-column-bottom">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minima beatae, iure harum ex? Nam omnis beatae, maiores distinctio corporis molestiae laudantium ipsum eaque, expedita maxime similique, pariatur quo nemo.</p>
+                <p>Базовый курс знакомит Вас с гитарой и с музыкой в целом. На нем мы расскажем Вам о том, что такое нотная грамота,как строятся аккорды и многое другое. Вы научитесь исполнять сольные произведения, читать с листа, поиграете пальцами и медиатором.</p>
             </div>
             <div class="text-column-bottom">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam expedita alias nesciunt tempora dicta qui, placeat officiis vero magnam soluta, vitae similique. Itaque aspernatur, porro eveniet quidem maxime molestiae officia.</p>
+                <p>Этот курс больше подходит людям, которые хотят просто научиться аккомпанировать сами себе (петь под гитару, играть ритм-партии).Особое внимание здесь уделяется игре по аккордам, как попадать своим голосом в такт и ритм песни.</p>
             </div>
             <div class="text-column-bottom">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod laudantium asperiores quos blanditiis maiores reiciendis suscipit inventore optio hic. Vero incidunt nemo rem ea voluptatum, corrupti praesentium qui repellendus aliquid.</p>
+                <p>Продвинутый курс электрогитары больше подходит для людей, которые уже имеют навыки игры на гитаре. Здесь Вы отрабатываете и шлифуете такие технические элементы, как тэппинг, двуручный тэппинг, свободная импровизация и другое.</p>
             </div>
             <div class="text-column-bottom">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod minima commodi saepe aspernatur, eaque, assumenda, omnis reiciendis, voluptatum et suscipit corporis placeat sunt? Commodi expedita voluptatum est dolores aliquid voluptatem.</p>
+                <p>Курс отчасти пересекается в теоретической части с курсом электрогитары.Этот курс подходит тем,кто хочет играть красивые мажорные и минорные мелодии,музыку Баха,Моцарта,Листа,Гомеса и других композиторов.</p>
             </div>
         </div>
     </div>
@@ -139,7 +89,7 @@
                 <div class="author-photo">
                     <p class="author-name">Денис Морозов</p>
                     <div class="author-photo-bg">
-                        <div class="photo"><img src="img/me.jpg" width="220" height="192" alt="Denis-Morozov">
+                        <div class="photo"><img src="{{ url_for('static', filename='img/me.jpg') }}" width="220" height="192" alt="Denis-Morozov">
                         </div>
                     </div>
                 </div>
@@ -194,39 +144,8 @@
             </div>
         </div>
     </div>
-    <!--Верстаем блок футера-->
-    <footer>
-        <div class="layout-center-wrapper clearfix">
-            <!-- Верстаем три колонки футера -->
-            <div class="footer-column clerfix to-left">
-                <h3>Гитара в Калуге</h3>
-                <p>Первый образовательный проект в Калуге, посвященный гитаре. Интересные курсы,познавательная программа, направленные на развитие культурной среды. Давайте сделаем этот город лучше вместе!</p>
-            </div>
-            <div class="footer-column to-left">
-                <p>Связь с нами. Мы всегда рады вашему звонку.
-                Звонить в будние дни с 9-00 до 21-00. В выходные с 10-00 до 19-00. </p>
-                <div class="footer-phones-all clearfix">
-                    <ul class="footer-middle phones-kinds to-left">
-                        <li>Мобильный</li>
-                        <li>Рабочий</li>
-                        <li>Почта</li>
-                    </ul>
-                    <ul class="footer-middle phones-numbers to-right">
-                        <li>8-953-333-49-71</li>
-                        <li>8-659-264-45-86</li>
-                        <li>gek-2006@yandex.ru</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-column to-left">
-                <p>Связь с нами в социальных сетях. </p>
-                <div class="social-buttons">
-                <p>Пишите в <a href="http://vk.com/guitar40">нашу группу в контакте.</a></p>
-                <p>Будем рады видеть Вас в нашей дружной компании!</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
+{% endblock %}
 
-</html>
+
+    
+    
