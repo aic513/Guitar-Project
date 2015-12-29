@@ -100,7 +100,7 @@ body {
     padding-left: 37px;
 }
 
-.main-picture {
+.main-picture-index {
     background: url("../img/start-pic.jpg")no-repeat 50% 50%;
     height: 700px;
     background-size: cover;
@@ -648,7 +648,7 @@ footer {
     margin-left: 20px;
 }
 
-.main-picture-price {
+.main-picture {
     background: url("../img/price-main-pic.jpg")no-repeat 50% 50%;
     height: 500px;
     background-size: cover;
@@ -657,7 +657,7 @@ footer {
     position: relative;
 }
 
-.main-picture-price:before {
+.main-picture:before {
     content: "";
     position: absolute;
     display: block;
@@ -669,7 +669,7 @@ footer {
     left: 0%;
 }
 
-.main-picture-price:after {
+.main-picture:after {
     right: 0px;
     content: "";
     position: absolute;

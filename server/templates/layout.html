@@ -37,9 +37,9 @@
         <!-- Закрыли центровщик -->
         <!--Верстаем главную картинку сайта-->
     {% if index %}
-        <div class="main-picture">
+        <div class="main-picture-index">
     {% else %}
-        <div class="main-picture-price">
+        <div class="main-picture">
     {% endif %}
             <div class="layout-center-wrapper clearfix">
                 <!-- Блок с предложением -->
@@ -111,10 +111,11 @@
             <div class="half-width">
             <label for="course-field" class="contact-name">Интересующий курс</label>
                 <select name="choice-of-course" id="course-field">
-                        <option value="choice">Выберите курс обучения</option>
-                        <option value="start">Для начинающих</option>
-                        <option value="optimal">Оптимальный</option>
-                        <option value="max">Максимальный</option>
+                    <option value="choice">Выберите курс обучения</option>
+                    <option value="base">Базовый курс</option>
+                    <option value="accompaniment">Курс аккомпанемента</option>
+                    <option value="electric-guitar">Проф-курс электрогитары</option>
+                    <option value="virtuoso">Проф-курс для виртуозов</option>
                     </select>
             </div>
             <div class="half-width">
@@ -122,7 +123,7 @@
                 <input type="tel" name="number" id="phone-field" placeholder="Для обратного звонка" required>
             </div>
             <label for="text-field">Текст сообщения:</label>
-            <textarea placeholder="Можете оставить все интересующие Вас вопросы, мы с радостью на них ответим" name="contact-text" id="text-field" rows="4"></textarea>
+            <textarea placeholder="Можете задать все интересующие Вас вопросы, мы с радостью на них ответим" name="contact-text" id="text-field" rows="4"></textarea>
             <div class="contact-buttons">
                 <input class="btn form-submit-btn" type="submit" value="Отправить">
                 <input class="btn form-esc-btn" type="reset" value="Отмена">
