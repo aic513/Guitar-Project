@@ -89,7 +89,7 @@
             <div class="footer-column to-left">
                 <p>Связь с нами в социальных сетях. </p>
                 <div class="social-buttons">
-                <p>Пишите в <a href="http://vk.com/guitar40">нашу группу в контакте.</a></p>
+                <p>Пишите в <a target="_blank" href="http://vk.com/guitar40">нашу группу в контакте.</a></p>
                 <p>Будем рады видеть Вас в нашей дружной компании!</p>
                 </div>
             </div>
@@ -101,15 +101,28 @@
         <form class="contact-form-on-button" action="/send" method="post">
             <h3>Оставьте заявку, Ваш номер телефона и мы ответим Вам течении часа!</h3>
             <div class="half-width">
-                <label for="login-field" class="contact-name">Ваше имя:</label>
-                <input type="text" name="login" id="login-field" placeholder="Представьтесь, пожалуйста" required>
+                <label for="name-field" class="contact-name">Ваше имя:</label>
+                <input type="text" name="login" id="name-field" placeholder="Представьтесь, пожалуйста" required>
             </div>
             <div class="half-width">
-                <label for="email-field" class="contact-mail">Ваш e-mail:</label>
-                <input type="email" name="email" id="email-field" placeholder="Для отправки ответа" required>
+                <label for="post-field" class="contact-mail">Ваш e-mail:</label>
+                <input type="email" name="email" id="post-field" placeholder="Для отправки ответа" required>
+            </div>
+            <div class="half-width">
+            <label for="course-field" class="contact-name">Интересующий курс</label>
+                <select name="choice-of-course" id="course-field">
+                        <option value="choice">Выберите курс обучения</option>
+                        <option value="start">Для начинающих</option>
+                        <option value="optimal">Оптимальный</option>
+                        <option value="max">Максимальный</option>
+                    </select>
+            </div>
+            <div class="half-width">
+                <label for="phone-field" class="phone">Ваш номер телефона:</label>
+                <input type="tel" name="number" id="phone-field" placeholder="Для обратного звонка" required>
             </div>
             <label for="text-field">Текст сообщения:</label>
-            <textarea placeholder="Можете оставить номер телефона, что бы мы перезвонили или другую информацию" name="contact-text" id="text-field" rows="4"></textarea>
+            <textarea placeholder="Можете оставить все интересующие Вас вопросы, мы с радостью на них ответим" name="contact-text" id="text-field" rows="4"></textarea>
             <div class="contact-buttons">
                 <input class="btn form-submit-btn" type="submit" value="Отправить">
                 <input class="btn form-esc-btn" type="reset" value="Отмена">
