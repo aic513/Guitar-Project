@@ -81,7 +81,7 @@ body {
 
 .menu .active-blue {
     border-width: 7px;
-    border-color: #1515bf; 
+    border-color: #1515bf;
 }
 
 .contact-right {
@@ -100,7 +100,7 @@ body {
     padding-left: 37px;
 }
 
-.main-picture {
+.main-picture-index {
     background: url("../img/start-pic.jpg")no-repeat 50% 50%;
     height: 700px;
     background-size: cover;
@@ -216,7 +216,7 @@ body {
 }
 
 .guitar {
-    background-position:  -916px 19px;
+    background-position: -916px 19px;
 }
 
 .btn {
@@ -285,9 +285,19 @@ body {
     padding-top: 24px;
 }
 
+.slide-inside a {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #878787;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: block;
+}
+
 .slider-main {
     -webkit-transition: -webkit-transform 1s;
-    transition-timing-function: cubic-bezier(1,0,0,1);
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
     width: 300%;
 }
 
@@ -296,18 +306,34 @@ body {
 }
 
 .opinion-image {
-    height: 260px;
-    width: 326px;
+    height: 222px;
+    width: 222px;
     margin: 0 auto;
-    background: url("../img/opininons/mary.jpg") no-repeat 50% 50%;
+    border-radius: 50%;
 }
 
-.robert {
-    background-image: url("../img/opininons/robert.jpg");
+.victory {
+    background: url("../img/opininons/victory.jpg") no-repeat 43% 25%;
 }
 
-.slava {
-    background-image: url("../img/opininons/slava.jpg");
+.pavel {
+   background: url("../img/opininons/pavel.jpg") no-repeat 11% 19%;
+}
+
+.elena-nikitina {
+    background: url("../img/opininons/elena-Nikitina.jpg") no-repeat 51% 19%;
+}
+
+.svetlana{
+    background: url("../img/opininons/svetlana.jpg") no-repeat 54% 15%;
+}
+
+.elena-makushinsya{
+    background: url("../img/opininons/elena-Makushinskya.jpg") no-repeat 51% 16%;
+}
+
+.stanislav{
+    background: url("../img/opininons/stanislav.jpg") no-repeat 34% 35%;
 }
 
 .slider-controls {
@@ -315,7 +341,7 @@ body {
     height: 25px;
     width: 80px;
     z-index: 5;
-    top: 759px;
+    top: 807px;
     background: #f2f2f2;
     margin-left: -30px;
     left: 50%;
@@ -337,8 +363,8 @@ input[id^="btn-"] {
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+#btn-2:checked ~ .slider-controls label[for="btn-2"]
+/*#btn-3:checked ~ .slider-controls label[for="btn-3"]*/ {
     background-color: #484848;
 }
 
@@ -354,11 +380,11 @@ input[id^="btn-"] {
     transform: translate(-1286px);
 }
 
-#btn-3:checked ~ .slider-inner .slider-main {
+/*#btn-3:checked ~ .slider-inner .slider-main {
     -webkit-transform: translate(-2572px);
     -ms-transform: translate(-2572px);
     transform: translate(-2572px);
-}
+}*/
 
 .description h4 {
     text-transform: uppercase;
@@ -389,9 +415,10 @@ input[id^="btn-"] {
     left: 157px;
 }
 
-.opinions{
-    padding-top:1px; 
+.opinions {
+    padding-top: 1px;
 }
+
 .opinions h3 {
     text-transform: uppercase;
     color: #787878;
@@ -462,7 +489,7 @@ input[id^="btn-"] {
     margin-top: 143px;
 }
 
-.author-text p{
+.author-text p {
     text-align: center;
 }
 
@@ -592,8 +619,8 @@ footer {
 }
 
 .social-buttons a {
-    color: #1515bf;
-    text-decoration: none;
+    color: #fff;
+    text-decoration: underline;
     font-style: italic;
 }
 
@@ -647,16 +674,16 @@ footer {
     margin-left: 20px;
 }
 
-.main-picture-price {
+.main-picture {
     background: url("../img/price-main-pic.jpg")no-repeat 50% 50%;
     height: 500px;
     background-size: cover;
     min-width: 1285px;
     margin-bottom: -43px;
-    position:relative;
+    position: relative;
 }
 
-.main-picture-price:before{
+.main-picture:before {
     content: "";
     position: absolute;
     display: block;
@@ -666,10 +693,9 @@ footer {
     border-bottom: 100px solid transparent;
     top: 76%;
     left: 0%;
-
 }
 
-.main-picture-price:after{
+.main-picture:after {
     right: 0px;
     content: "";
     position: absolute;
@@ -682,6 +708,7 @@ footer {
     border-bottom: 100px solid transparent;
     top: 76%;
 }
+
 .big-supply {
     width: 795px;
     min-height: 121px;
@@ -749,7 +776,7 @@ footer {
 .main-price-block {
     width: 1285px;
     height: 583px;
-    margin-left:26px;
+    margin-left: 26px;
     margin-bottom: 51px;
 }
 
@@ -974,21 +1001,22 @@ footer {
     margin-bottom: 52px;
 }
 
+.main-responses-inside a{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #878787;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: block;
+}
+
 .main-responses-image {
-    height: 260px;
-    width: 326px;
+    height: 222px;
+    width: 222px;
     margin: 0 auto;
-    background: url("../img/responses/mary1.jpg") no-repeat 50% 50%;
+    border-radius: 50%;
 }
-
-.robert1 {
-    background-image: url("../img/responses/robert1.jpg");
-}
-
-.slava1 {
-    background-image: url("../img/responses/slava1.jpg");
-}
-
 
 /*Верстка страницы с контактами*/
 
@@ -1219,6 +1247,22 @@ input:-moz-placeholder {
     padding: 9px 4px 13px 13px;
 }
 
+input[placeholder] {
+    text-overflow: ellipsis;
+}
+
+input::-moz-placeholder {
+    text-overflow: ellipsis;
+}
+
+input:-moz-placeholder {
+    text-overflow: ellipsis;
+}
+
+input:-ms-input-placeholder {
+    text-overflow: ellipsis;
+}
+
 input::-webkit-input-placeholder {
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     color: #bdbdbd;
@@ -1277,6 +1321,16 @@ input:-moz-placeholder {
     width: 289px;
 }
 
+.contact-form select:hover,
+.contact-form input[type="date"]:hover {
+    cursor: pointer;
+}
+
+.contact-form select:active,
+.contact-form input[type="date"]:active {
+    cursor: pointer;
+}
+
 .form-bottom {
     display: inline-block;
     font-size: 17px;
@@ -1286,8 +1340,10 @@ input:-moz-placeholder {
 }
 
 
+/*Верстаем всплывающий popup*/
+
 .write-us {
-    display:none;
+    display: none;
     position: fixed;
     left: 50%;
     margin-left: -310px;
@@ -1318,7 +1374,7 @@ input:-moz-placeholder {
     left: 25%;
 }
 
-.contact-form-on-button{
+.contact-form-on-button {
     width: 479px;
     margin: 0 auto;
     min-height: 263px;
@@ -1340,7 +1396,9 @@ label {
 
 .contact-form-on-button input[type="text"],
 .contact-form-on-button input[type="email"],
-.contact-form-on-button textarea {
+.contact-form-on-button textarea,
+.contact-form-on-button input[type="tel"],
+.contact-form-on-button select {
     display: block;
     width: 186px;
     padding: 7px 15px;
@@ -1352,6 +1410,10 @@ label {
     color: #bdbdbd;
     font-family: "SegoeUIRegular", "Arial", sans-serif;
     background-color: #f3f3f3;
+}
+
+.contact-form-on-button select {
+    width: 221px;
 }
 
 .contact-form-on-button textarea {
@@ -1387,8 +1449,8 @@ label {
     letter-spacing: 1px;
 }
 
-.form-submit-btn{
-    padding-bottom: 5px;
+.form-submit-btn {
+    padding-bottom: 1px;
     margin-right: 25px;
     height: 41px;
 }
@@ -1424,3 +1486,6 @@ label {
     -webkit-animation: login-error 0.5s;
     animation: login-error 0.5s;
 }
+
+
+/*-----------END--------*/
