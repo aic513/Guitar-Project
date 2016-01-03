@@ -1,4 +1,4 @@
-(function(){
+(function () {
 
   var link = document.querySelector('.info-right');
   var popup = document.querySelector('.write-us');
@@ -39,4 +39,15 @@
     }
   }, false);
 
+})();
+
+
+(function () {
+  var el = document.querySelector('.main-picture-index');
+
+  window.onscroll = function () {
+    offset = document.documentElement.scrollTop || document.body.scrollTop;
+    el.style.backgroundPosition = 0;
+    el.style.backgroundPosition = '50% ' + (offset / 3) + 'px';
+  };
 })();
