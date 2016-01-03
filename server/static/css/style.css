@@ -88,6 +88,26 @@ body {
     margin-right: 49px;
 }
 
+@keyframes move {
+    from {
+        transform: translateX(-30%);
+    }
+    20% {
+        transform: translateX(20%);
+    }
+    40% {
+        transform: translateX(-20%);
+    }
+    70% {
+        transform: translateX(40%);
+    }
+}
+
+.contact-right:hover {
+    cursor: pointer;
+    animation: move 0.3s ease alternate;
+}
+
 .contact-right p:first-child {
     font-size: 1.56em;
     margin-top: 30px;
@@ -95,6 +115,7 @@ body {
 }
 
 .contact-right p:last-child {
+    text-transform: uppercase;
     font-size: 15px;
     margin-top: -25px;
     padding-left: 37px;
@@ -170,6 +191,10 @@ body {
     margin-top: 34px;
     text-transform: uppercase;
     height: 137px;
+}
+
+.info-right:hover {
+    background-color: rgba(255, 250, 250, 0.3);
 }
 
 .features {
@@ -296,9 +321,8 @@ body {
 }
 
 .slider-main {
-    -webkit-transition: -webkit-transform 1s;
-    transition-timing-function: cubic-bezier(1, 0, 0, 1);
-    width: 300%;
+    transition: 1s cubic-bezier(1, 0, 0, 1);
+    width: 200%;
 }
 
 .slider-inner {
@@ -313,27 +337,27 @@ body {
 }
 
 .victory {
-    background: url("../img/opininons/victory.jpg") no-repeat 43% 25%;
+    background: #D3D3D3 url("../img/opininons/victory.jpg") no-repeat 43% 25%;
 }
 
 .pavel {
-   background: url("../img/opininons/pavel.jpg") no-repeat 11% 19%;
+    background: #D3D3D3 url("../img/opininons/pavel.jpg") no-repeat 11% 19%;
 }
 
 .elena-nikitina {
-    background: url("../img/opininons/elena-Nikitina.jpg") no-repeat 51% 19%;
+    background: #D3D3D3 url("../img/opininons/elena-Nikitina.jpg") no-repeat 51% 19%;
 }
 
-.svetlana{
-    background: url("../img/opininons/svetlana.jpg") no-repeat 54% 15%;
+.svetlana {
+    background: #D3D3D3 url("../img/opininons/svetlana.jpg") no-repeat 54% 15%;
 }
 
-.elena-makushinsya{
-    background: url("../img/opininons/elena-Makushinskya.jpg") no-repeat 51% 16%;
+.elena-makushinsya {
+    background: #D3D3D3 url("../img/opininons/elena-Makushinskya.jpg") no-repeat 51% 16%;
 }
 
-.stanislav{
-    background: url("../img/opininons/stanislav.jpg") no-repeat 34% 35%;
+.stanislav {
+    background: #D3D3D3 url("../img/opininons/stanislav.jpg") no-repeat 34% 35%;
 }
 
 .slider-controls {
@@ -364,7 +388,9 @@ input[id^="btn-"] {
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"]
-/*#btn-3:checked ~ .slider-controls label[for="btn-3"]*/ {
+/*#btn-3:checked ~ .slider-controls label[for="btn-3"]*/
+
+{
     background-color: #484848;
 }
 
@@ -379,6 +405,7 @@ input[id^="btn-"] {
     -ms-transform: translate(-1286px);
     transform: translate(-1286px);
 }
+
 
 /*#btn-3:checked ~ .slider-inner .slider-main {
     -webkit-transform: translate(-2572px);
@@ -444,12 +471,12 @@ input[id^="btn-"] {
     background-size: cover;
     background: url("../img/guitar-picture.jpg") no-repeat 50% 50%;
     min-width: 1285px;
-    height: 422px;
+    min-height: 422px;
 }
 
 .descripton-guitar {
     border: 3px solid #fff;
-    height: 226px;
+    min-height: 226px;
     width: 816px;
     margin-top: 90px;
 }
@@ -468,7 +495,6 @@ input[id^="btn-"] {
 }
 
 .author {
-    min-height: 850px;
     margin-top: 115px;
     margin-bottom: -42px;
 }
@@ -597,9 +623,10 @@ footer {
 }
 
 .footer-column h3 {
+    margin-top: 15px;
     font-size: 1.56em;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 23px;
 }
 
 .footer-middle {
@@ -721,12 +748,12 @@ footer {
     background-size: cover;
     background: url("../img/guitar-picture-price.jpg") no-repeat 50% 50%;
     min-width: 1285px;
-    height: 433px;
+    min-height: 433px;
 }
 
 .descripton-guitar-price {
     border: 3px solid #fff;
-    height: 226px;
+    min-height: 226px;
     width: 816px;
     margin-top: 90px;
 }
@@ -927,12 +954,12 @@ footer {
     background-size: cover;
     background: url("../img/responses-pic.jpg") no-repeat 50% 50%;
     min-width: 1285px;
-    height: 423px;
+    min-height: 423px;
 }
 
 .descripton-guitar-responses {
     border: 3px solid #fff;
-    height: 226px;
+    min-height: 226px;
     width: 816px;
     margin-top: 90px;
 }
@@ -1001,7 +1028,7 @@ footer {
     margin-bottom: 52px;
 }
 
-.main-responses-inside a{
+.main-responses-inside a {
     margin-top: 10px;
     font-size: 15px;
     color: #878787;
@@ -1017,6 +1044,7 @@ footer {
     margin: 0 auto;
     border-radius: 50%;
 }
+
 
 /*Верстка страницы с контактами*/
 
@@ -1423,15 +1451,24 @@ label {
 
 .contact-form-on-button input[type="text"]:hover,
 .contact-form-on-button input[type="email"]:hover,
+.contact-form-on-button input[type="tel"],
+.contact-form-on-button select:hover,
 .contact-form-on-button textarea:hover {
     cursor: pointer;
 }
 
 .contact-form-on-button input[type="text"]:active,
 .contact-form-on-button input[type="email"]:active,
-.contact-form-on-button textarea:active {
+.contact-form-on-button textarea:active,
+.contact-form-on-button select:active,
+.contact-form-on-button input[type="tel"]:active {
     color: #d8d8d8;
     cursor: pointer;
+}
+
+.contact-buttons {
+    width: 479px;
+    min-height: 45px;
 }
 
 .form-submit-btn,
@@ -1453,6 +1490,7 @@ label {
     padding-bottom: 1px;
     margin-right: 25px;
     height: 41px;
+    border-radius: 3px;
 }
 
 .form-esc-btn {
@@ -1462,6 +1500,7 @@ label {
     border: 2px solid #bec5c0;
     background: #e6f2e8;
     height: 41px;
+    border-radius: 3px;
 }
 
 .form-esc-btn:hover {
@@ -1478,14 +1517,115 @@ label {
 
 .write-us-show {
     display: block;
-    -webkit-animation: login-open 0.4s;
-    animation: login-open 2s;
 }
 
-.login-popup-error {
-    -webkit-animation: login-error 0.5s;
-    animation: login-error 0.5s;
+.gratuity {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.6875em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
 }
 
 
 /*-----------END--------*/
+
+
+/*--Форма обратного звонка*/
+
+.tel-write-us {
+    display: none;
+    position: fixed;
+    left: 50%;
+    margin-left: -202px;
+    width: 230px;
+    padding: 43px 33px;
+    background: #fff;
+    box-shadow: 0 23px 40px #626363;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.125;
+    z-index: 100;
+    top: 94px;
+}
+
+.form-on-tel {
+    margin: 0 auto;
+    width: 230px;
+    min-height: 263px;
+}
+
+.form-on-tel h3 {
+    text-align: center;
+}
+
+.half-width-tel {
+    display: block;
+    margin-right: -4px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.half-width-tel label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+}
+
+.form-on-tel input[type="text"],
+.form-on-tel input[type="tel"] {
+    display: block;
+    width: 186px;
+    padding: 7px 15px;
+    border: 2px solid #c0c0c0;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #bdbdbd;
+    font-family: "SegoeUIRegular", "Arial", sans-serif;
+    background-color: #f3f3f3;
+}
+
+.form-on-tel input[type="text"]:hover,
+.form-on-tel input[type="tel"]:hover {
+    cursor: pointer;
+}
+
+.form-on-tel input[type="text"]:active,
+.form-on-tel input[type="tel"]:active {
+    color: #d8d8d8;
+    cursor: pointer;
+}
+
+.contact-button-tel {
+    width: 479px;
+    min-height: 45px;
+}
+
+.submit-btn-tel {
+    font-size: 17px;
+    display: block;
+    vertical-align: baseline;
+    width: 220px;
+    float: left;
+    margin-left: 0;
+    height: 32px;
+    border: none;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1px;
+    margin-right: 25px;
+    height: 41px;
+    border-radius: 3px;
+}
+
+.contact-right-show {
+    display: block;
+}
+
+
+/*-----------END----------*/
