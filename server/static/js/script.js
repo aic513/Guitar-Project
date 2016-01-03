@@ -43,7 +43,7 @@
 
 
 (function () {
-  var el = document.querySelector('.main-picture-index');
+  var el = document.querySelector('.main-picture-index') || document.querySelector('.main-picture');
 
   window.onscroll = function () {
     offset = document.documentElement.scrollTop || document.body.scrollTop;
