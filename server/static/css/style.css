@@ -1380,6 +1380,11 @@ input:-moz-placeholder {
     min-height: 263px;
 }
 
+.contact-form-wait-text,
+.contact-form-send-text {
+    display: none;
+}
+
 .half-width {
     display: inline-block;
     vertical-align: baseline;
