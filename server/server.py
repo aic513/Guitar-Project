@@ -54,9 +54,9 @@ def form():
         phone = data['phone']
         email = data['email']
 
-        msg = Message('Заявка с сайта Guitar40', sender = ADMINS[0], recipients = ADMINS)
-        msg.body = 'Имя: ' + user + '\nТелефон: ' + phone + '\nEmail: ' + email
-        msg.html = '<b>Имя:</b> ' + user + '<br><b>Телефон:</b> ' + phone + '<br><b>Email:</b> ' + email
+        msg = Message(u'Заявка с сайта Guitar40', sender = ADMINS[0], recipients = ADMINS)
+        msg.body = u'Имя: ' + user + u'\nТелефон: ' + phone + u'\nEmail: ' + email
+        msg.html = u'<b>Имя:</b> ' + user + u'<br><b>Телефон:</b> ' + phone + u'<br><b>Email:</b> ' + email
         mail.send(msg)
 
         return jsonify(data)
