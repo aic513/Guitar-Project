@@ -387,10 +387,7 @@ input[id^="btn-"] {
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"]
-/*#btn-3:checked ~ .slider-controls label[for="btn-3"]*/
-
-{
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
     background-color: #484848;
 }
 
@@ -405,13 +402,6 @@ input[id^="btn-"] {
     -ms-transform: translate(-1286px);
     transform: translate(-1286px);
 }
-
-
-/*#btn-3:checked ~ .slider-inner .slider-main {
-    -webkit-transform: translate(-2572px);
-    -ms-transform: translate(-2572px);
-    transform: translate(-2572px);
-}*/
 
 .description h4 {
     text-transform: uppercase;
@@ -718,7 +708,7 @@ footer {
     border-right: 100px solid transparent;
     border-top: 60px solid transparent;
     border-bottom: 100px solid transparent;
-    top: 76%;
+    top: 88%;
     left: 0%;
 }
 
@@ -733,7 +723,7 @@ footer {
     border-right: 668px solid white;
     border-top: 59px solid transparent;
     border-bottom: 100px solid transparent;
-    top: 76%;
+    top: 88%;
 }
 
 .big-supply {
@@ -982,6 +972,7 @@ footer {
 }
 
 .description-responses h2 {
+    margin-top: 60px;
     font-size: 1.6875em;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1073,6 +1064,7 @@ footer {
 }
 
 .description-contacts h2 {
+    margin-top: 60px;
     font-size: 1.6875em;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1368,7 +1360,7 @@ input:-moz-placeholder {
 }
 
 
-/*Верстаем всплывающий popup*/
+/*Форма обатной связи*/
 
 .write-us {
     display: none;
@@ -1384,6 +1376,19 @@ input:-moz-placeholder {
     line-height: 1.125;
     z-index: 100;
     top: 74px;
+    animation: open 2s linear;
+}
+
+@keyframes open {
+    from {
+        transform: translateX(-70%);
+    }
+    40% {
+        transform: translateX(70%);
+    }
+    60% {
+        transform: translateX(50%);
+    }
 }
 
 .cross-close {
@@ -1549,6 +1554,16 @@ label {
     line-height: 1.125;
     z-index: 100;
     top: 94px;
+    animation: low 2s cubic-bezier(.57, .56, .69, .69);
+}
+
+@keyframes low {
+    0% {
+        transform: translateY(-100%);
+    }
+    90% {
+        transform: translateY(20%);
+    }
 }
 
 .form-on-tel {
