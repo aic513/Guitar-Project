@@ -29,30 +29,10 @@
                 <!-- Верстаем правую верхнюю форму с контактами -->
                 <div class="contact-right to-right">
                     <p>8 (953) 333-49-71</p>
-                    <p>Заказать звонок</p>
+                    <p>Телефон для связи</p>
                 </div>
                 <!--Закрыли форму с контактами  -->
             </nav>
-            <!-- Форма обратного звонка -->
-                    <div class="tel-write-us">
-                        <div class="cross-close call-us-close"><img src="{{ url_for('static', filename='img/cross.png') }}" width="21" height="21" alt="CROSS"></div>
-                       <form class="form-on-tel" action="/send" method="post">
-                    <h3>ЗАКАЗАТЬ ЗВОНОК</h3>
-                    <div class="half-width-tel">
-                        <label for="name-field" class="contact-name">Ваше имя:</label>
-                        <input type="text" name="login" id="name-field" placeholder="Представьтесь, пожалуйста" required>
-                    </div>
-                    <div class="half-width-tel">
-                        <label for="phone-field" class="phone">Ваш номер телефона</label>
-                        <input type="tel" name="number" id="phone-field" placeholder="8 (___) ___-__-__" required>
-                    </div>
-                    <div class="contact-button-tel">
-                        <input class="btn submit-btn-tel" type="submit" value="Отправить">
-                    </div>
-                </form>
-
-                    </div>
-            <!--Закрыли форму обратного звонка-->
         </div>
         <!-- Закрыли центровщик -->
         <!--Верстаем главную картинку сайта-->
@@ -102,7 +82,7 @@
                     <ul class="footer-middle phones-numbers to-right">
                         <li>8-953-333-49-71</li>
                         <li>8-659-264-45-86</li>
-                        <li>info@guitar40.ru</li>
+                        <li> info@guitar40.ru</li>
                     </ul>
                 </div>
             </div>
@@ -136,7 +116,7 @@
                     <option value="accompaniment">Курс аккомпанемента</option>
                     <option value="electric-guitar">Проф-курс электрогитары</option>
                     <option value="virtuoso">Проф-курс для виртуозов</option>
-                    </select>
+                </select>
             </div>
             <div class="half-width">
                 <label for="phone-field" class="phone">Ваш номер телефона:</label>
@@ -148,20 +128,23 @@
                 <input class="btn form-submit-btn" type="submit" value="Отправить">
                 <input class="btn form-esc-btn" type="reset" value="Отмена">
             </div>
-            <div class="gratuity">
-                 <h7>Спасибо за внимание, ваша заявка отправлена!</h7>
-            </div>
         </form>
+        <h3 class="contact-form-wait-text">
+           Отправляем, подождите, пожалуйста...
+        </h3>
+        <h3 class="contact-form-send-text">
+           Благодарим за заполнение формы, скоро мы с вами свяжемся.
+        </h3>
     </div>
     <!-- Закончили форму связи -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <!-- Статистика сайта -->
-    <script type="text/javascript">
+    <script>
         var _paq = _paq || [];
         _paq.push(["setDomains", ["*.guitar40.ru"]]);
         _paq.push(['trackPageView']);
         _paq.push(['enableLinkTracking']);
-        (function() {
+        (function () {
             var u="//stat.z-gu.ru/";
             _paq.push(['setTrackerUrl', u+'piwik.php']);
             _paq.push(['setSiteId', 22]);
